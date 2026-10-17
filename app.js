@@ -14,7 +14,7 @@ function applyTheme(theme){
   themeButton?.setAttribute('aria-pressed',String(dark));
   themeButton?.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
   const label=themeButton?.querySelector('.theme-text');if(label)label.textContent=dark?'Light mode':'Dark mode';
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content',dark?'#191a18':'#f5f2eb');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content',dark?'#121519':'#ffffff');
 }
 applyTheme(document.documentElement.dataset.theme||'light');
 themeButton?.addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';applyTheme(theme);try{localStorage.setItem('rudhlab-theme',theme)}catch(_){}});

@@ -86,3 +86,7 @@ The original educational/unvalidated status of the 3D VOF and square-cylinder so
 ## Research-first redesign
 
 The homepage uses the group name, direct research descriptions, and real simulation footage. The Research link opens the full funded-project section. The decorative field, discipline strip, icon cards, slogans, and illustrative code snippets have been removed. Research areas are presented as specific methods and applications, with links to publications and software. Instrument Serif headings and DM Sans body text share a warm paper/charcoal palette across the homepage, publications, and academic profile.
+
+## Minimal theme and careers
+
+The site uses a system sans-serif stack, neutral light/dark colours, and a restrained heading scale. `careers.html` is linked from every navigation bar and included in the Pages workflow. The landing-page opportunities notice links to Careers; only its dot blinks slowly, and reduced-motion preferences disable the animation. Positions are labelled upcoming or open to enquiries, without invented vacancies, eligibility, funding, or deadlines.
