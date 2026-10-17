@@ -1,0 +1,338 @@
+[
+  {
+    "id": "pub-17",
+    "title": "Finite element study of the efficacy of three different loops for bodily protraction of the mandibular molar",
+    "authors": [
+      "Aditi Mehta",
+      "Alap Shah",
+      "Anisha Prasad",
+      "Bharvi Jani",
+      "Kinnari Shah",
+      "Anirudh Kulkarni",
+      "Nattapon Chantarapanich",
+      "Samroeng Inglam",
+      "Mohammad Fareed",
+      "Anand Marya"
+    ],
+    "venue": "Scientific Reports 15 (1), 13938",
+    "year": 2025,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": "10.1038/s41598-025-94627-5",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:7PzlFSSx8tAC"
+  },
+  {
+    "id": "pub-20",
+    "title": "Secondary Wake Mode Instability Analysis Behind Two-Dimensional Cylinder Using OpenFOAM®",
+    "authors": [
+      "Ravi Kant",
+      "Malay Verma",
+      "Ojas Satbhai",
+      "Anirudh Kulkarni",
+      "Ramesh Bhoraniya"
+    ],
+    "venue": "Proceedings of Fluid Mechanics and Fluid Power (FMFP) 2023, Vol. 1: Fluid Mechanics, Springer, pp. 483–493",
+    "year": 2025,
+    "type": "chapter",
+    "label": "Conference chapter",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:9ZlFYXVOiuMC"
+  },
+  {
+    "id": "pub-15",
+    "title": "Understanding the role of CFD in microwave-assisted pyrolysis for biomass conversion",
+    "authors": [
+      "A. Raje",
+      "A. A. Bhise",
+      "D. V. Surya",
+      "A. Kulkarni"
+    ],
+    "venue": "Journal of Analytical and Applied Pyrolysis 179, 106477",
+    "year": 2024,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:aqlVkmm33-oC"
+  },
+  {
+    "id": "pub-19",
+    "title": "Phase Change Material Applications in Thermal Management of Electronics and Electrical Systems",
+    "authors": [
+      "Tehmina Ambreen",
+      "Arslan Saleem",
+      "Paula Ruiz-Hincapie",
+      "Anirudh Kulkarni",
+      "Hafiz Muhammad Ali",
+      "Cheol Woo Park"
+    ],
+    "venue": "Phase Change Materials for Thermal Energy Management and Storage, CRC Press, pp. 207–230",
+    "year": 2024,
+    "type": "chapter",
+    "label": "Book chapter",
+    "doi": "10.1201/9781003331957-9",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:mVmsd5A6BfQC"
+  },
+  {
+    "id": "pub-13",
+    "title": "Advances in computational fluid dynamics modeling for biomass pyrolysis: a review",
+    "authors": [
+      "A. Kulkarni",
+      "G. Mishra",
+      "S. Palla",
+      "P. Ramesh",
+      "D. V. Surya",
+      "T. Basak"
+    ],
+    "venue": "Energies 16 (23), 7839",
+    "year": 2023,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:qxL8FJ1GzNcC"
+  },
+  {
+    "id": "pub-05",
+    "title": "Entropy analysis of the MHD Jeffrey fluid flow in an inclined porous pipe with convective boundaries",
+    "authors": [
+      "A. Raje",
+      "A. A. Bhise",
+      "A. Kulkarni"
+    ],
+    "venue": "International Journal of Thermofluids 17, 100275",
+    "year": 2023,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:KlAtU1dfN6UC"
+  },
+  {
+    "id": "pub-09",
+    "title": "Recent advancements of CFD and heat transfer studies in pyrolysis: a review",
+    "authors": [
+      "Venkata Surya Dadi",
+      "Sridevi Veluru",
+      "Hemanth Kumar Tanneru",
+      "Rajasekhar Reddy Busigari",
+      "Ramesh Potnuri",
+      "Anirudh Kulkarni",
+      "Garima Mishra",
+      "Tanmay Basak"
+    ],
+    "venue": "Journal of Analytical and Applied Pyrolysis 175, 106163",
+    "year": 2023,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": "10.1016/j.jaap.2023.106163",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:ULOm3_A8WrAC"
+  },
+  {
+    "id": "pub-14",
+    "title": "Significance of a permeable semi-circular body and magnetic field on the double-diffusive traits",
+    "authors": [
+      "T. R. Vijaybabu",
+      "K. Anirudh",
+      "D. V. Surya"
+    ],
+    "venue": "International Journal of Thermofluids 20, 100486",
+    "year": 2023,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:4TOpqqG69KYC"
+  },
+  {
+    "id": "pub-08",
+    "title": "Two-step synthesis of biochar using torrefaction and microwave-assisted pyrolysis: understanding the effects of torrefaction temperature and catalyst loading",
+    "authors": [
+      "R. Potnuri",
+      "C. S. Rao",
+      "D. V. Surya",
+      "V. Sridevi",
+      "A. Kulkarni"
+    ],
+    "venue": "Journal of Analytical and Applied Pyrolysis 175, 106191",
+    "year": 2023,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:_kc_bZDykSQC"
+  },
+  {
+    "id": "pub-07",
+    "title": "Irreversibility and hydrothermal analysis of the MWCNTs/GNPs-based nanofluids for electronics cooling applications of the pin-fin heat sinks: Multiphase Eulerian-Lagrangian modeling",
+    "authors": [
+      "T. Ambreen",
+      "A. Saleem",
+      "M. Tanveer",
+      "K. Anirudh",
+      "S. A. Shehzad",
+      "C. W. Park"
+    ],
+    "venue": "Case Studies in Thermal Engineering 31, 101806",
+    "year": 2022,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": "10.1016/j.csite.2022.101806",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:5nxA0vEk-isC"
+  },
+  {
+    "id": "pub-10",
+    "title": "Numerical analysis of the performance improvement of a flat-plate solar collector using conjugated porous blocks",
+    "authors": [
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "Renewable Energy 172, 382-391",
+    "year": 2021,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:eQOLeE2rZwMC"
+  },
+  {
+    "id": "pub-12",
+    "title": "Numerical investigation of unsteady flow across tandem square cylinders near a moving wall at Re= 100",
+    "authors": [
+      "R. S. Rajpoot",
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "Case Studies in Thermal Engineering 26, 101042",
+    "year": 2021,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:ufrVoPGSRksC"
+  },
+  {
+    "id": "pub-16",
+    "title": "On the effects of orientation on flow and heat transfer from a semi-circular cylinder near a stationary wall",
+    "authors": [
+      "R. S. Rajpoot",
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "Case Studies in Thermal Engineering 26, 100967",
+    "year": 2021,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:WF5omc3nYNoC"
+  },
+  {
+    "id": "pub-22",
+    "title": "Phase Change Materials and Its Applications",
+    "authors": [
+      "Anirudh Kulkarni",
+      "Rajat Saxena",
+      "Sumit Tiwari"
+    ],
+    "venue": "Fundamentals and Innovations in Solar Energy, Springer, pp. 311–340",
+    "year": 2021,
+    "type": "chapter",
+    "label": "Book chapter",
+    "doi": "10.1007/978-981-33-6456-1_13",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:LkGwnXOMwfcC"
+  },
+  {
+    "id": "pub-01",
+    "title": "Numerical study on performance improvement of a flat-plate solar collector filled with porous foam",
+    "authors": [
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "Renewable Energy 147, 1704-1717",
+    "year": 2020,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": "10.1016/j.renene.2019.09.038",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:UeHWp8X0CEIC"
+  },
+  {
+    "id": "pub-00",
+    "title": "Performance improvement of a flat-plate solar collector by inserting intermittent porous blocks",
+    "authors": [
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "Renewable Energy 145, 428-441",
+    "year": 2020,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:9yKSN-GCB0IC"
+  },
+  {
+    "id": "pub-02",
+    "title": "Effects of Prandtl number on the forced convection heat transfer from a porous square cylinder",
+    "authors": [
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "International Journal of Heat and Mass Transfer 126, 1358-1375",
+    "year": 2018,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": "10.1016/j.ijheatmasstransfer.2018.06.003",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:u5HHmVD_uO8C"
+  },
+  {
+    "id": "pub-11",
+    "title": "Lattice Boltzmann simulations of flow and heat transfer from a permeable triangular cylinder under the influence of aiding buoyancy",
+    "authors": [
+      "T. R. Vijaybabu",
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "International Journal of Heat and Mass Transfer 117, 799-817",
+    "year": 2018,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:d1gkVwhDpl0C"
+  },
+  {
+    "id": "pub-04",
+    "title": "LBM simulation of unsteady flow and heat transfer from a diamond-shaped porous cylinder",
+    "authors": [
+      "T. R. Vijaybabu",
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "International Journal of Heat and Mass Transfer 120, 267-283",
+    "year": 2018,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:2osOgNQ5qMEC"
+  },
+  {
+    "id": "pub-03",
+    "title": "On the onset of vortex shedding past a two-dimensional porous square cylinder",
+    "authors": [
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "Journal of Wind Engineering and Industrial Aerodynamics 179, 200-214",
+    "year": 2018,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:u-x6o8ySG0sC"
+  },
+  {
+    "id": "pub-06",
+    "title": "Mixed convective heat transfer from a permeable square cylinder: A lattice Boltzmann analysis",
+    "authors": [
+      "T. R. Vijaybabu",
+      "K. Anirudh",
+      "S. Dhinakaran"
+    ],
+    "venue": "International Journal of Heat and Mass Transfer 115, 854-870",
+    "year": 2017,
+    "type": "journal",
+    "label": "Journal article",
+    "doi": null,
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:qjMakFHDy7sC"
+  }
+]

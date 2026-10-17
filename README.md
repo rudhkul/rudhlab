@@ -68,3 +68,11 @@ Official reference: https://docs.github.com/en/pages/configuring-a-custom-domain
 ## Appearance and contact
 
 Use the header’s light/dark toggle on either page. The preference is remembered across navigation and reloads; the first visit follows the operating system. Printing the academic profile uses a light print layout. The connected-cell logo is an original SVG in `assets/mark.svg`. Contact links are email and LinkedIn; research repositories remain linked from the gallery.
+
+## Academic content
+
+`publications.html` contains 21 unique publications (18 journal articles and three chapters). Citations are server-rendered for accessibility and indexing, with browser-local search and filtering. `publications.json` is a structured bibliography snapshot for reuse; the public page is maintained in HTML. Publication links lead to verified DOIs where available, otherwise the exact Scholar record.
+
+The list omits the thesis, the truncated duplicate OpenFOAM entry, and the unrelated Cureus tendon-transfer case report. The OpenFOAM chapter is listed once with its 2025 publisher publication year (the underlying FMFP conference was in 2023). Full author lists were reconciled with the supplied CV and available publisher/Crossref metadata. No live citation metrics are claimed.
+
+The three project records include titles, funding bodies, roles, collaborators, and 2026–2029 periods. Funding amounts are intentionally absent. The raw CV is not included in this public repository. Tannu Parmar is listed as JRF, not an enrolled doctoral scholar. Bhau Kolhe is listed as a part-time PhD researcher in VAWT analysis and performance improvement. `assets/anirudh-kulkarni.png` is the owner-provided portrait.
