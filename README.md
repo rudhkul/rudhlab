@@ -19,7 +19,21 @@ The two visual studies are explicitly labelled original illustrations, not patie
 
 ### Add a gallery entry
 
-Add an object to `LAB.studies` in `content.js`. Current artwork renderers: `flow`, `dental`, `cuda`, `julia`, `fsi`. For real sample assets, extend the renderer in `app.js` to use an image/video, supply descriptive alt text, and include assumptions, hardware/precision for benchmarks, and a public source/publication link. Do not claim illustrative art is simulation output. Update the All work count in `index.html` after adding entries.
+Add an object to `LAB.studies` in `content.js`. Current artwork renderers: `flow`, `dental`, `cuda`, `julia`, `fsi`. For real samples, add a `media` object as shown below. Include assumptions, hardware/precision for benchmarks, and a public source/publication link. Do not claim illustrative art is simulation output. The gallery count updates automatically. Upload files using GitHub's **Add file → Upload files** in `assets/`, then edit `content.js` and add an entry:
+
+```js
+{
+  id: 'dental-sample-01', type: 'simulation',
+  category: 'DENTAL SIMULATION', label: 'Research sample',
+  title: 'Your sample title', description: 'What the sample demonstrates.',
+  media: {type: 'video', src: 'assets/dental-sample-01.mp4',
+    poster: 'assets/dental-sample-01.jpg', alt: 'Describe the visible simulation.'},
+  detail: 'Methods, assumptions, limitations, and your contribution.',
+  method: 'Software · model · conditions', url: null
+}
+```
+
+Use `type: 'image'` in `media` for a PNG/JPEG/WebP image; omit `poster`. Commit the changes to trigger automatic deployment. Use short compressed clips; large datasets and raw solver output belong in a research repository or archive, not Git history.
 
 ### Add contact and a full CV
 
