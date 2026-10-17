@@ -21,7 +21,7 @@ jobs:
       - name: Prepare public files
         run: |
           mkdir -p _site/assets
-          cp index.html profile.html publications.html careers.html styles.css content.js app.js theme.js .nojekyll _site/
+          cp index.html profile.html publications.html careers.html 404.html sitemap.xml robots.txt styles.css content.js app.js theme.js .nojekyll _site/
           cp -R assets/. _site/assets/
           if [ -f CNAME ]; then cp CNAME _site/; fi
       - uses: actions/configure-pages@v5

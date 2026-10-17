@@ -15,7 +15,11 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 - `content.js`: simulation and code entries, public email, optional CV PDF path.
 - `styles.css`: the single design system (tokens, layout, dark mode, print).
 - `app.js`: theme, mobile menu, click-to-play video, simulation dialog, publication filters.
-- `assets/`: portrait, logo mark, and `media/` simulation clips with poster frames.
+- `404.html`: not-found page; uses root-relative links because GitHub Pages serves it at any missing path.
+- `sitemap.xml`, `robots.txt`: search-engine discovery for https://rudhlab.com. Update `lastmod` when a page changes substantially.
+- `assets/`: portrait, logo mark, `og-image.jpg` (1200 × 630 link-preview image), and `media/` simulation clips with poster frames.
+
+Each page has a canonical URL, Open Graph / Twitter tags for link previews, and the homepage and profile carry schema.org JSON-LD (ResearchOrganization and Person) so search engines can identify the lab and its lead.
 
 The pages share one header and footer. When changing navigation, update all four HTML files.
 
