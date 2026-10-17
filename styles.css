@@ -64,11 +64,11 @@ a:hover .arrow{transform:translateX(3px)}
 .section-head .link:hover{color:var(--fg)}
 
 /* Home hero */
-.hero{padding-block:clamp(72px,12vw,152px) clamp(48px,7vw,80px)}
-.hero h1{font-size:clamp(34px,5.4vw,64px);line-height:1.06;font-weight:500;letter-spacing:-.035em;max-width:18ch}
-.hero .lede{margin-top:28px;font-size:clamp(17px,1.6vw,19px);line-height:1.55;color:var(--muted);max-width:52ch}
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(56px,9vw,120px)}
+.hero h1{font-size:clamp(32px,3.9vw,52px);line-height:1.08;font-weight:500;letter-spacing:-.035em}
+.hero .lede{margin-top:24px;font-size:clamp(16px,1.35vw,18px);line-height:1.6;color:var(--muted);max-width:48ch}
 .hero .lede a{color:var(--fg)}
-.notice{display:inline-flex;align-items:center;gap:10px;margin-top:40px;padding:8px 16px 8px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;transition:border-color .15s,background .15s}
+.notice{display:inline-flex;align-items:center;gap:10px;margin-top:32px;padding:8px 16px 8px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;transition:border-color .15s,background .15s}
 .notice:hover{border-color:var(--faint);background:var(--soft)}
 .notice .dot{width:7px;height:7px;border-radius:50%;background:#22a55a;animation:pulse 2.4s ease-in-out infinite}
 .notice .muted{margin-left:2px}
@@ -83,8 +83,7 @@ a:hover .arrow{transform:translateX(3px)}
 .player .play svg{width:18px;height:18px;margin-left:3px}
 .player:hover .play span{transform:scale(1.06);background:rgba(255,255,255,.24)}
 .player.playing .play{display:none}
-.featured{padding-bottom:clamp(64px,9vw,112px)}
-.featured figcaption{display:flex;justify-content:space-between;gap:24px;margin-top:16px;font-size:14px}
+.featured figcaption{display:flex;justify-content:space-between;gap:24px;margin-top:14px;font-size:13.5px;line-height:1.5}
 .featured figcaption strong{font-weight:500}
 .featured figcaption button{color:var(--muted);white-space:nowrap;align-self:flex-start}
 .featured figcaption button:hover{color:var(--fg)}
@@ -229,6 +228,7 @@ dialog video{width:100%;max-height:62vh;background:#000}
 
 /* Responsive */
 @media (max-width:960px){
+  .hero{grid-template-columns:1fr}
   .areas,.sims,.people{grid-template-columns:repeat(2,minmax(0,1fr))}
   .areas{grid-template-columns:1fr;gap:32px}
   .section-grid,.year-group,.cv-section{grid-template-columns:1fr}
