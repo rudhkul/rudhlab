@@ -15,11 +15,11 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 - `app.js`: illustrative flow visual, accessible gallery filters and detail dialogs.
 - `assets/`: add cleared simulation images, PDFs, and short videos here.
 
-The two visual studies are explicitly labelled original illustrations, not patient data or research results. Replace them with reviewed samples when ready. The three code links point to the owner's existing public repositories. We have not added publications, grant titles, funding amounts, student names, degree dates, speed-up figures, or clinical claims that were not provided.
+The gallery contains seven original simulation videos retrieved from the owner’s LinkedIn posts, with local MP4 files, frame thumbnails, method notes, and original-post links. The separate homepage analytical flow illustration remains explicitly labelled as an illustration. The three code links point to the owner's existing public repositories. We have not added publications, grant titles, funding amounts, student names, degree dates, speed-up figures, or clinical claims that were not provided.
 
 ### Add a gallery entry
 
-Add an object to `LAB.studies` in `content.js`. Current artwork renderers: `flow`, `dental`, `cuda`, `julia`, `fsi`. For real samples, add a `media` object as shown below. Include assumptions, hardware/precision for benchmarks, and a public source/publication link. Do not claim illustrative art is simulation output. The gallery count updates automatically. Upload files using GitHub's **Add file → Upload files** in `assets/`, then edit `content.js` and add an entry:
+Add an object to `LAB.studies` in `content.js`. Code artwork renderers: `cuda`, `julia`, `fsi`. For real samples, add a `media` object as shown below. Include assumptions, hardware/precision for benchmarks, and a public source/publication link. Do not claim illustrative art is simulation output. The gallery count updates automatically. Upload files using GitHub's **Add file → Upload files** in `assets/`, then edit `content.js` and add an entry:
 
 ```js
 {
@@ -76,3 +76,9 @@ Use the header’s light/dark toggle on either page. The preference is remembere
 The list omits the thesis, the truncated duplicate OpenFOAM entry, and the unrelated Cureus tendon-transfer case report. The OpenFOAM chapter is listed once with its 2025 publisher publication year (the underlying FMFP conference was in 2023). Full author lists were reconciled with the supplied CV and available publisher/Crossref metadata. No live citation metrics are claimed.
 
 The three project records include titles, funding bodies, roles, collaborators, and 2026–2029 periods. Funding amounts are intentionally absent. The raw CV is not included in this public repository. Tannu Parmar is listed as JRF, not an enrolled doctoral scholar. Bhau Kolhe is listed as a part-time PhD researcher in VAWT analysis and performance improvement. `assets/anirudh-kulkarni.png` is the owner-provided portrait.
+
+## Simulation-video gallery
+
+Seven local H.264 MP4 clips (about 4.4 MB total) replace the original schematic gallery entries: 3D CUDA two-phase flow, a falling droplet, Julia/CUDA square-cylinder flow, a PDEU virtual wind tunnel, porous-body rotation, a sphere wake, and circular-cylinder VIV. `assets/media/sources.json` records the original public post URLs. No expiring LinkedIn CDN URLs, browser-session details, or account analytics are published. MP4 streams were copied without re-encoding and remuxed for progressive playback; thumbnails were extracted around the middle of each clip.
+
+The original educational/unvalidated status of the 3D VOF and square-cylinder solvers is retained. The sphere-wake example is labelled as an initial GPU-oriented demonstration. No independent validation or new benchmark claim is made. Clips load on demand, play inline, can be opened in a larger study dialog, and pause other clips when playback starts. LinkedIn sign-in is not required to play the locally hosted gallery videos.
