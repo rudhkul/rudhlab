@@ -1,6 +1,6 @@
 # RudhLab
 
-Research website for Anirudh Kulkarni, PhD. Static HTML, CSS, and JavaScript, built for GitHub Pages. No build tooling, server, paid hosting, or API key is needed. Google Fonts is optional; system sans-serif fallbacks work without it.
+Research website for Anirudh Kulkarni, PhD. Static HTML, CSS, and JavaScript, built for GitHub Pages. No build tooling, server, paid hosting, or API key is needed. Google Fonts is optional; system serif/sans-serif fallbacks work without it.
 
 ## Preview
 
@@ -12,10 +12,10 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 - `profile.html`: concise academic profile with a print-to-PDF layout. This is not a full CV.
 - `content.js`: gallery entries and optional public email/CV PDF path.
 - `styles.css`: responsive design and print styles.
-- `app.js`: illustrative flow visual, accessible gallery filters and detail dialogs.
+- `app.js`: theme switching, accessible gallery filters and detail dialogs.
 - `assets/`: add cleared simulation images, PDFs, and short videos here.
 
-The gallery contains seven original simulation videos retrieved from the owner’s LinkedIn posts, with local MP4 files, frame thumbnails, method notes, and original-post links. The separate homepage analytical flow illustration remains explicitly labelled as an illustration. The three code links point to the owner's existing public repositories. We have not added publications, grant titles, funding amounts, student names, degree dates, speed-up figures, or clinical claims that were not provided.
+The gallery contains seven original simulation videos retrieved from the owner’s LinkedIn posts, with local MP4 files, frame thumbnails, method notes, and original-post links. The homepage features the actual sphere-wake recording with its solver and visualization caption. The three code links point to the owner's existing public repositories. We have not added publications, grant titles, funding amounts, student names, degree dates, speed-up figures, or clinical claims that were not provided.
 
 ### Add a gallery entry
 
@@ -62,12 +62,12 @@ Official reference: https://docs.github.com/en/pages/configuring-a-custom-domain
 
 - Desktop and mobile layout, no horizontal overflow.
 - Gallery filters, keyboard navigation, dialog dismissal and focus return.
-- Flow pause/play and reduced-motion preference.
+- Native video playback and pause controls; no automatic motion.
 - Real repository links, print-friendly profile, no invented CV details.
 
 ## Appearance and contact
 
-Use the header’s light/dark toggle on either page. The preference is remembered across navigation and reloads; the first visit follows the operating system. Printing the academic profile uses a light print layout. The connected-cell logo is an original SVG in `assets/mark.svg`. Contact links are email and LinkedIn; research repositories remain linked from the gallery.
+Use the header’s light/dark toggle on every page. The preference is remembered across navigation and reloads; the first visit follows the operating system. Printing the academic profile uses a light print layout. The connected-cell logo is an original SVG in `assets/mark.svg`. Contact links are email and LinkedIn; research repositories remain linked from the gallery.
 
 ## Academic content
 
@@ -82,3 +82,7 @@ The three project records include titles, funding bodies, roles, collaborators, 
 Seven local H.264 MP4 clips (about 4.4 MB total) replace the original schematic gallery entries: 3D CUDA two-phase flow, a falling droplet, Julia/CUDA square-cylinder flow, a PDEU virtual wind tunnel, porous-body rotation, a sphere wake, and circular-cylinder VIV. `assets/media/sources.json` records the original public post URLs. No expiring LinkedIn CDN URLs, browser-session details, or account analytics are published. MP4 streams were copied without re-encoding and remuxed for progressive playback; thumbnails were extracted around the middle of each clip.
 
 The original educational/unvalidated status of the 3D VOF and square-cylinder solvers is retained. The sphere-wake example is labelled as an initial GPU-oriented demonstration. No independent validation or new benchmark claim is made. Clips load on demand, play inline, can be opened in a larger study dialog, and pause other clips when playback starts. LinkedIn sign-in is not required to play the locally hosted gallery videos.
+
+## Research-first redesign
+
+The homepage uses the group name, direct research descriptions, and real simulation footage. The Research link opens the full funded-project section. The decorative field, discipline strip, icon cards, slogans, and illustrative code snippets have been removed. Research areas are presented as specific methods and applications, with links to publications and software. Instrument Serif headings and DM Sans body text share a warm paper/charcoal palette across the homepage, publications, and academic profile.
