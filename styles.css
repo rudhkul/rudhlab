@@ -205,6 +205,15 @@ a.row:hover h3{text-decoration:underline;text-underline-offset:3px;text-decorati
 .cols h3{font-size:14px;font-weight:500;margin-bottom:6px}
 .cols p{font-size:14.5px;color:var(--muted)}
 
+/* News */
+.news{display:grid}
+.news .entry{padding-block:20px;border-bottom:1px solid var(--line)}
+.news .entry:first-child{padding-top:0}
+.news .entry:last-child{border-bottom:0;padding-bottom:0}
+.news .when .status{display:flex;margin-top:4px;font-size:13px;color:var(--fg)}
+.news-meta{margin-top:2px}
+.news-link{margin-top:8px;font-size:14px}
+
 /* Careers */
 .cta{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:999px;background:var(--fg);color:var(--bg);font-size:15px;font-weight:500;transition:opacity .15s}
 .cta:hover{opacity:.85}
@@ -237,7 +246,8 @@ dialog video{width:100%;max-height:62vh;background:#000}
   .year-group>h2{padding-top:22px;padding-bottom:0}
   .dialog-body{grid-template-columns:1fr}
 }
-@media (max-width:760px){
+/* Seven nav links need ~860px; collapse to the menu below that. */
+@media (max-width:860px){
   .header .wrap{gap:8px}
   .menu-toggle{display:grid}
   .nav{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px var(--gutter) 20px;background:var(--bg);border-bottom:1px solid var(--line);font-size:17px;display:none}
@@ -246,6 +256,8 @@ dialog video{width:100%;max-height:62vh;background:#000}
   .menu-toggle .close{display:none}
   .menu-toggle[aria-expanded="true"] .close{display:block}
   .menu-toggle[aria-expanded="true"] .open-icon{display:none}
+}
+@media (max-width:760px){
   .row{grid-template-columns:1fr}
   .row .meta{text-align:left;grid-row:auto}
   .entry{grid-template-columns:1fr}

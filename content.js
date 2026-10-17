@@ -6,6 +6,31 @@ window.LAB = {
   email: 'anirudhk@outlook.in',
   // Add a reviewed CV PDF in assets/, then set e.g. 'assets/anirudh-kulkarni-cv.pdf'.
   cv: null,
+  // Talks and news. Dates are YYYY-MM-DD; add `end` for multi-day events.
+  // Items whose end date has not passed are listed as Upcoming automatically.
+  // Optional fields: host, location, url, linkLabel, kind (defaults to 'Talk').
+  news: [
+    {
+      start: '2026-11-03', end: '2026-11-06',
+      title: 'Porous media modelling with OpenFOAM',
+      event: 'CFD & OpenFOAM workshop',
+      location: 'Online',
+      url: 'https://www.linkedin.com/feed/update/urn:li:activity:7511364472872271873/',
+      linkLabel: 'Workshop post'
+    },
+    {
+      start: '2026-07-13', end: '2026-07-17',
+      title: 'CFD modelling of combustion',
+      event: 'Experimental, Computational and Sustainable Perspectives in Combustion Technologies',
+      host: 'Department of Mechanical Engineering, NIT Andhra Pradesh'
+    },
+    {
+      start: '2026-06-22', end: '2026-06-26',
+      title: 'Overview of AI/ML in CFD workflows',
+      event: 'One-week STTP on “Applications and Practices in CFD”',
+      host: 'Government Engineering College, Valsad'
+    }
+  ],
   studies: [
   {
     "id": "cuda-two-phase",

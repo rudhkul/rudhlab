@@ -11,8 +11,9 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 - `index.html`: research areas, funded projects, simulations and code, selected publications, people, contact.
 - `publications.html`: full bibliography grouped by year, with search and type filters.
 - `profile.html`: concise academic profile with a print-to-PDF layout. This is not a full CV.
+- `news.html`: upcoming and past talks, workshops, and news (rendered from `LAB.news`).
 - `careers.html`: upcoming JRF / PhD positions and how to get in touch.
-- `content.js`: simulation and code entries, public email, optional CV PDF path.
+- `content.js`: talks/news, simulation and code entries, public email, optional CV PDF path.
 - `styles.css`: the single design system (tokens, layout, dark mode, print).
 - `app.js`: theme, mobile menu, click-to-play video, simulation dialog, publication filters.
 - `404.html`: not-found page; uses root-relative links because GitHub Pages serves it at any missing path.
@@ -21,7 +22,23 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 
 Each page has a canonical URL, Open Graph / Twitter tags for link previews, and the homepage and profile carry schema.org JSON-LD (ResearchOrganization and Person) so search engines can identify the lab and its lead.
 
-The pages share one header and footer. When changing navigation, update all four HTML files.
+The pages share one header and footer. When changing navigation, update every HTML page (including `404.html`).
+
+### Add a talk or news item
+
+Add an object to `LAB.news` in `content.js`; order does not matter. Items whose end date is today or later appear under **Upcoming** (soonest first); the rest appear under **Past talks** (newest first). The homepage shows the three most relevant items.
+
+```js
+{
+  start: '2026-11-03', end: '2026-11-06',   // YYYY-MM-DD; omit `end` for a one-day event
+  title: 'Talk title',
+  event: 'Workshop or conference name',
+  host: 'Organising department or institution',   // optional
+  location: 'Online',                             // optional
+  url: 'https://…', linkLabel: 'Event page',      // optional
+  kind: 'Award'                                   // optional; defaults to Talk
+}
+```
 
 ### Add a simulation or repository
 

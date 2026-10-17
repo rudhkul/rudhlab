@@ -88,6 +88,46 @@ if (codeList) {
   });
 }
 
+// News and talks, from content.js. Upcoming vs past is decided by today's date.
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const day = iso => { const [y, m, d] = iso.split('-').map(Number); return {y, m, d, t: new Date(y, m - 1, d).getTime()}; };
+function when(item) {
+  const a = day(item.start), b = day(item.end || item.start);
+  if (a.t === b.t) return `${a.d} ${MONTHS[a.m - 1]} ${a.y}`;
+  if (a.y === b.y && a.m === b.m) return `${a.d}–${b.d} ${MONTHS[a.m - 1]} ${a.y}`;
+  if (a.y === b.y) return `${a.d} ${MONTHS[a.m - 1]} – ${b.d} ${MONTHS[b.m - 1]} ${a.y}`;
+  return `${a.d} ${MONTHS[a.m - 1]} ${a.y} – ${b.d} ${MONTHS[b.m - 1]} ${b.y}`;
+}
+const today = (() => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime(); })();
+const news = (LAB.news || []).map(n => ({...n, upcoming: day(n.end || n.start).t >= today}));
+const upcoming = news.filter(n => n.upcoming).sort((a, b) => day(a.start).t - day(b.start).t);
+const past = news.filter(n => !n.upcoming).sort((a, b) => day(b.start).t - day(a.start).t);
+function newsEntry(n) {
+  const row = document.createElement('article');
+  row.className = 'entry';
+  row.innerHTML = '<span class="when"></span><div><h3></h3><p class="news-meta"></p></div>';
+  row.querySelector('.when').textContent = when(n);
+  if (n.upcoming) { const s = document.createElement('span'); s.className = 'status'; s.textContent = 'Upcoming'; row.querySelector('.when').append(s); }
+  row.querySelector('h3').textContent = (n.kind && n.kind !== 'Talk' ? n.kind + ': ' : '') + n.title;
+  row.querySelector('.news-meta').textContent = [n.event, n.host, n.location].filter(Boolean).join(' · ');
+  if (n.url) {
+    const a = document.createElement('a');
+    Object.assign(a, {className: 'link', href: n.url, target: '_blank', rel: 'noopener noreferrer'});
+    a.textContent = (n.linkLabel || 'Details') + ' ↗';
+    const p = document.createElement('p'); p.className = 'news-link'; p.append(a);
+    row.lastElementChild.append(p);
+  }
+  return row;
+}
+function fill(host, items, emptyText) {
+  if (!host) return;
+  if (!items.length) { const p = document.createElement('p'); p.className = 'muted'; p.textContent = emptyText; host.replaceChildren(p); return; }
+  host.replaceChildren(...items.map(newsEntry));
+}
+fill($('#news-upcoming'), upcoming, 'No upcoming talks at the moment.');
+fill($('#news-past'), past, 'Nothing listed yet.');
+fill($('#news-latest'), [...upcoming, ...past].slice(0, 3), 'Nothing listed yet.');
+
 // Study dialog.
 const dialog = $('#study-dialog');
 let opener = null;
