@@ -3,7 +3,7 @@ window.LAB = {
   name: 'RudhLab', domain: 'rudhlab.com',
   lead: 'Anirudh Kulkarni, PhD', institution: 'PDEU', location: 'Gandhinagar, India',
   // Set a public email address to replace the GitHub contact link.
-  email: null,
+  email: 'anirudhk@outlook.in',
   // Add a reviewed CV PDF in assets/, then set e.g. 'assets/anirudh-kulkarni-cv.pdf'.
   cv: null,
   studies: [

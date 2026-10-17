@@ -64,3 +64,7 @@ Official reference: https://docs.github.com/en/pages/configuring-a-custom-domain
 - Gallery filters, keyboard navigation, dialog dismissal and focus return.
 - Flow pause/play and reduced-motion preference.
 - Real repository links, print-friendly profile, no invented CV details.
+
+## Appearance and contact
+
+Use the header’s light/dark toggle on either page. The preference is remembered across navigation and reloads; the first visit follows the operating system. Printing the academic profile uses a light print layout. The connected-cell logo is an original SVG in `assets/mark.svg`. Contact links are email and LinkedIn; research repositories remain linked from the gallery.
