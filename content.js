@@ -2,7 +2,7 @@
 window.LAB = {
   name: 'RudhLab', domain: 'rudhlab.com',
   lead: 'Anirudh Kulkarni, PhD', institution: 'PDEU', location: 'Gandhinagar, India',
-  // Set a public email address to replace the GitHub contact link.
+  // Public contact address used by the homepage contact link.
   email: 'anirudhk@outlook.in',
   // Add a reviewed CV PDF in assets/, then set e.g. 'assets/anirudh-kulkarni-cv.pdf'.
   cv: null,
@@ -138,9 +138,9 @@ window.LAB = {
     "type": "code",
     "category": "GPU COMPUTING",
     "label": "Public repository",
-    "title": "CUDA · LBM · IBM · FVM",
-    "description": "Explore the public CUDA computing repository and its source files.",
-    "art": "cuda",
+    "title": "CUDA-computing: LBM, IBM and FVM",
+    "description": "GPU implementations of lattice-Boltzmann, immersed-boundary, and finite-volume methods.",
+    "language": "CUDA C++",
     "detail": "Public source code maintained by Anirudh Kulkarni. Follow the repository for implementation details and any available documentation. No speed-up or validation claim is made here.",
     "method": "CUDA · lattice Boltzmann · immersed boundary · finite volume",
     "url": "https://github.com/rudhkul/cuda-lbm-ibm-fvm"
@@ -152,7 +152,7 @@ window.LAB = {
     "label": "Public repository",
     "title": "Lid-driven cavity in Julia",
     "description": "A Julia cavity-flow example at Re = 1000, with Ghia validation described in the repository.",
-    "art": "julia",
+    "language": "Julia",
     "detail": "The public repository describes a lid-driven cavity implementation in Julia at Reynolds number 1000 with Ghia validation. See the source for numerical details and verification materials.",
     "method": "Julia · CFD · Re = 1000",
     "url": "https://github.com/rudhkul/cfdjulia"
@@ -163,8 +163,8 @@ window.LAB = {
     "category": "FLUID–STRUCTURE INTERACTION",
     "label": "Public repository",
     "title": "Fluid–structure interaction",
-    "description": "Browse the public C++ fsicavity research code.",
-    "art": "fsi",
+    "description": "The fsicavity repository: C++ research code for fluid–structure interaction.",
+    "language": "C++",
     "detail": "Explore the public fsicavity repository. Consult its files for the implemented formulation and assumptions; this website does not independently validate the code.",
     "method": "C++ · computational fluid dynamics",
     "url": "https://github.com/rudhkul/fsicavity"

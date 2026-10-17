@@ -1,6 +1,6 @@
 # RudhLab
 
-Research website for Anirudh Kulkarni, PhD. Static HTML, CSS, and JavaScript, built for GitHub Pages. No build tooling, server, paid hosting, or API key is needed. Google Fonts is optional; system serif/sans-serif fallbacks work without it.
+Research website for Anirudh Kulkarni, PhD. Static HTML, CSS, and JavaScript, built for GitHub Pages. No build tooling, server, paid hosting, or API key is needed. Google Fonts (Inter) is optional; the system sans-serif fallback works without it.
 
 ## Preview
 
@@ -8,32 +8,34 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 
 ## Content
 
-- `index.html`: research themes, project-role summary, people, contact.
+- `index.html`: research areas, funded projects, simulations and code, selected publications, people, contact.
+- `publications.html`: full bibliography grouped by year, with search and type filters.
 - `profile.html`: concise academic profile with a print-to-PDF layout. This is not a full CV.
-- `content.js`: gallery entries and optional public email/CV PDF path.
-- `styles.css`: responsive design and print styles.
-- `app.js`: theme switching, accessible gallery filters and detail dialogs.
-- `assets/`: add cleared simulation images, PDFs, and short videos here.
+- `careers.html`: upcoming JRF / PhD positions and how to get in touch.
+- `content.js`: simulation and code entries, public email, optional CV PDF path.
+- `styles.css`: the single design system (tokens, layout, dark mode, print).
+- `app.js`: theme, mobile menu, click-to-play video, simulation dialog, publication filters.
+- `assets/`: portrait, logo mark, and `media/` simulation clips with poster frames.
 
-The gallery contains seven original simulation videos retrieved from the owner’s LinkedIn posts, with local MP4 files, frame thumbnails, method notes, and original-post links. The homepage features the actual sphere-wake recording with its solver and visualization caption. The three code links point to the owner's existing public repositories. We have not added publications, grant titles, funding amounts, student names, degree dates, speed-up figures, or clinical claims that were not provided.
+The pages share one header and footer. When changing navigation, update all four HTML files.
 
-### Add a gallery entry
+### Add a simulation or repository
 
-Add an object to `LAB.studies` in `content.js`. Code artwork renderers: `cuda`, `julia`, `fsi`. For real samples, add a `media` object as shown below. Include assumptions, hardware/precision for benchmarks, and a public source/publication link. Do not claim illustrative art is simulation output. The gallery count updates automatically. Upload files using GitHub's **Add file → Upload files** in `assets/`, then edit `content.js` and add an entry:
+Add an object to `LAB.studies` in `content.js`. Entries with `type: 'simulation'` appear in the Simulations grid (the clip featured at the top of the homepage is excluded from the grid automatically). Entries with `type: 'code'` appear as rows under Code. Include assumptions, hardware/precision for benchmarks, and a public source/publication link. Upload files using GitHub's **Add file → Upload files** in `assets/media/`, then add an entry:
 
 ```js
 {
   id: 'dental-sample-01', type: 'simulation',
-  category: 'DENTAL SIMULATION', label: 'Research sample',
-  title: 'Your sample title', description: 'What the sample demonstrates.',
-  media: {type: 'video', src: 'assets/dental-sample-01.mp4',
-    poster: 'assets/dental-sample-01.jpg', alt: 'Describe the visible simulation.'},
-  detail: 'Methods, assumptions, limitations, and your contribution.',
+  category: 'DENTAL SIMULATION', label: 'Simulation · 0:15',
+  title: 'Your sample title', description: 'One or two sentences shown on the card.',
+  media: {type: 'video', src: 'assets/media/dental-sample-01.mp4',
+    poster: 'assets/media/dental-sample-01.jpg', alt: 'Describe the visible simulation.'},
+  detail: 'Methods, assumptions, limitations, and your contribution (shown in the dialog).',
   method: 'Software · model · conditions', url: null
 }
 ```
 
-Use `type: 'image'` in `media` for a PNG/JPEG/WebP image; omit `poster`. Commit the changes to trigger automatic deployment. Use short compressed clips; large datasets and raw solver output belong in a research repository or archive, not Git history.
+A poster image is required for the grid thumbnail; use a 16:10 or 16:9 frame. For a code entry, set `type: 'code'`, `title`, `description`, `language` (shown on the right of the row), and `url`. Commit the changes to trigger automatic deployment. Use short compressed clips; large datasets and raw solver output belong in a research repository or archive, not Git history.
 
 ### Add contact and a full CV
 
@@ -61,7 +63,7 @@ Official reference: https://docs.github.com/en/pages/configuring-a-custom-domain
 ## Verification before publication
 
 - Desktop and mobile layout, no horizontal overflow.
-- Gallery filters, keyboard navigation, dialog dismissal and focus return.
+- Simulation dialog, keyboard navigation, dialog dismissal and focus return; publication search and filters.
 - Native video playback and pause controls; no automatic motion.
 - Real repository links, print-friendly profile, no invented CV details.
 
@@ -75,18 +77,14 @@ Use the header’s light/dark toggle on every page. The preference is remembered
 
 The list omits the thesis, the truncated duplicate OpenFOAM entry, and the unrelated Cureus tendon-transfer case report. The OpenFOAM chapter is listed once with its 2025 publisher publication year (the underlying FMFP conference was in 2023). Full author lists were reconciled with the supplied CV and available publisher/Crossref metadata. No live citation metrics are claimed.
 
-The three project records include titles, funding bodies, roles, collaborators, and 2026–2029 periods. Funding amounts are intentionally absent. The raw CV is not included in this public repository. Tannu Parmar is listed as JRF, not an enrolled doctoral scholar. Bhau Kolhe is listed as a part-time PhD researcher in VAWT analysis and performance improvement. `assets/anirudh-kulkarni.png` is the owner-provided portrait.
+The three project records include titles, funding bodies, roles, collaborators, and 2026–2029 periods. Funding amounts are intentionally absent. The raw CV is not included in this public repository. Tannu Parmar is listed as JRF, not an enrolled doctoral scholar. Bhau Kolhe is listed as a part-time PhD researcher in VAWT analysis and performance improvement. `assets/anirudh-kulkarni.png` is the owner-provided portrait (the pages use the optimized `.jpg` copy).
 
 ## Simulation-video gallery
 
 Seven local H.264 MP4 clips (about 4.4 MB total) replace the original schematic gallery entries: 3D CUDA two-phase flow, a falling droplet, Julia/CUDA square-cylinder flow, a PDEU virtual wind tunnel, porous-body rotation, a sphere wake, and circular-cylinder VIV. `assets/media/sources.json` records the original public post URLs. No expiring LinkedIn CDN URLs, browser-session details, or account analytics are published. MP4 streams were copied without re-encoding and remuxed for progressive playback; thumbnails were extracted around the middle of each clip.
 
-The original educational/unvalidated status of the 3D VOF and square-cylinder solvers is retained. The sphere-wake example is labelled as an initial GPU-oriented demonstration. No independent validation or new benchmark claim is made. Clips load on demand, play inline, can be opened in a larger study dialog, and pause other clips when playback starts. LinkedIn sign-in is not required to play the locally hosted gallery videos.
+The original educational/unvalidated status of the 3D VOF and square-cylinder solvers is retained. The sphere-wake example is labelled as an initial GPU-oriented demonstration. No independent validation or new benchmark claim is made. Clips load on demand and open in a study dialog with method notes; starting one pauses any other. LinkedIn sign-in is not required to play the locally hosted gallery videos.
 
-## Research-first redesign
+## Design
 
-The homepage uses the group name, direct research descriptions, and real simulation footage. The Research link opens the full funded-project section. The decorative field, discipline strip, icon cards, slogans, and illustrative code snippets have been removed. Research areas are presented as specific methods and applications, with links to publications and software. Instrument Serif headings and DM Sans body text share a warm paper/charcoal palette across the homepage, publications, and academic profile.
-
-## Minimal theme and careers
-
-The site uses a system sans-serif stack, neutral light/dark colours, and a restrained heading scale. `careers.html` is linked from every navigation bar and included in the Pages workflow. The landing-page opportunities notice links to Careers; only its dot blinks slowly, and reduced-motion preferences disable the animation. Positions are labelled upcoming or open to enquiries, without invented vacancies, eligibility, funding, or deadlines.
+The site uses one minimal template across all pages: Inter (loaded from Google Fonts, with a system sans-serif fallback), a neutral black-and-white palette with matching dark mode, a single 1200 px column, and a left-label / right-content grid for every section. Uppercase eyebrow labels, card borders, tag chips, and decorative arrows on internal links have been removed. Videos show their poster frame with a play button and start only when clicked; only one clip plays at a time. The Careers notice on the homepage is a single line; only its dot pulses, and reduced-motion preferences disable that. `assets/anirudh-kulkarni.jpg` is a 720 px web copy (about 47 KB) of the owner-provided `anirudh-kulkarni.png`, which is kept as the source.
