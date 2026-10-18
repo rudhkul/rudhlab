@@ -102,7 +102,11 @@
     "image": "assets/publications/pub-19.jpg",
     "imageAlt": "A CPU heat sink with copper heat pipes and a fan.",
     "imageCredit": "Illustrative photo: Hustvedt, Wikimedia Commons, CC BY-SA 3.0",
-    "imageSource": "https://commons.wikimedia.org/wiki/File:Heatsink_with_heat_pipes.jpg"
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Heatsink_with_heat_pipes.jpg",
+    "fullText": {
+      "url": "mailto:anirudhk@outlook.in?subject=PDF%20request%3A%20Phase%20Change%20Material%20Applications%20in%20Thermal%20Management%20of%20Electronics%20and%20Electrical%20Systems",
+      "label": "Request PDF"
+    }
   },
   {
     "id": "pub-13",
@@ -350,7 +354,11 @@
     "image": "assets/publications/pub-22.jpg",
     "imageAlt": "Temperature against energy content as a phase change material melts and solidifies.",
     "imageCredit": "Illustrative diagram, Wikimedia Commons, CC0",
-    "imageSource": "https://commons.wikimedia.org/wiki/File:Phase_Change_Material_graph.webp"
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Phase_Change_Material_graph.webp",
+    "fullText": {
+      "url": "mailto:anirudhk@outlook.in?subject=PDF%20request%3A%20Phase%20Change%20Materials%20and%20Its%20Applications",
+      "label": "Request PDF"
+    }
   },
   {
     "id": "pub-01",
