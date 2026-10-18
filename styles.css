@@ -94,6 +94,13 @@ a:hover .arrow{transform:translateX(3px)}
 .areas h3,.row h3,.sim h3,.person h3{font-size:17px;font-weight:500;letter-spacing:-.01em;line-height:1.35}
 .areas p{margin-top:10px;color:var(--muted);font-size:15px}
 .areas a{display:inline-block;margin-top:14px;font-size:14px}
+.area-media{display:block;width:100%;margin-bottom:18px;text-align:left}
+.area-media .player{display:block;aspect-ratio:16/10}
+.area-media .player img{transition:transform .4s ease}
+.area-media:hover .player img{transform:scale(1.025)}
+/* Paper figure: shown whole on white, like the publication thumbnails. */
+.area-media.figure{display:grid;place-items:center;aspect-ratio:16/10;padding:10px;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.area-media.figure img{width:100%;height:auto}
 
 /* Generic rows (projects, code, positions) */
 .rows{border-top:1px solid var(--line)}
@@ -258,7 +265,8 @@ dialog video{width:100%;max-height:62vh;background:#000}
 @media (max-width:960px){
   .hero{grid-template-columns:1fr}
   .areas,.sims,.people{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .areas{grid-template-columns:1fr;gap:32px}
+  .areas{grid-template-columns:1fr;gap:40px}
+  .area-media{max-width:480px}
   .section-grid,.year-group,.cv-section{grid-template-columns:1fr}
   .section-head{position:static}
   .year-group>h2{padding-top:22px;padding-bottom:0}

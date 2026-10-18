@@ -24,7 +24,11 @@
     "image": "assets/publications/pub-17.jpg",
     "imageAlt": "Finite-element models of the molar with the T loop, Cherry loop and open helical loop.",
     "imageCredit": "Figure 1, Mehta et al., Scientific Reports (2025), CC BY-NC-ND 4.0",
-    "imageSource": "https://doi.org/10.1038/s41598-025-94627-5"
+    "imageSource": "https://doi.org/10.1038/s41598-025-94627-5",
+    "fullText": {
+      "url": "https://www.nature.com/articles/s41598-025-94627-5.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-20",
@@ -46,7 +50,11 @@
     "image": "assets/publications/pub-20.jpg",
     "imageAlt": "Smoke visualisation of a Kármán vortex street behind a cylinder.",
     "imageCredit": "Illustrative photo: Jürgen Wagner, Wikimedia Commons, CC BY-SA 4.0",
-    "imageSource": "https://commons.wikimedia.org/wiki/File:Karmansche_Wirbelstr_kleine_Re.JPG"
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karmansche_Wirbelstr_kleine_Re.JPG",
+    "fullText": {
+      "url": "https://doi.org/10.2139/ssrn.4236090",
+      "label": "Preprint"
+    }
   },
   {
     "id": "pub-15",
@@ -113,7 +121,11 @@
     "image": "assets/publications/pub-13.jpg",
     "imageAlt": "Diagram linking pyrolysis variables, CFD quantities and optimisation outcomes.",
     "imageCredit": "Figure 1, Kulkarni et al., Energies (2023), CC BY 4.0",
-    "imageSource": "https://doi.org/10.3390/en16237839"
+    "imageSource": "https://doi.org/10.3390/en16237839",
+    "fullText": {
+      "url": "https://www.mdpi.com/1996-1073/16/23/7839/pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-05",
@@ -133,7 +145,11 @@
     "image": "assets/publications/pub-05.jpg",
     "imageAlt": "Schematic of Jeffrey fluid flow in an inclined circular pipe.",
     "imageCredit": "Figure 1, Raje et al., International Journal of Thermofluids (2023), CC BY 4.0",
-    "imageSource": "https://doi.org/10.1016/j.ijft.2022.100275"
+    "imageSource": "https://doi.org/10.1016/j.ijft.2022.100275",
+    "fullText": {
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666202722001380",
+      "label": "Open access"
+    }
   },
   {
     "id": "pub-09",
@@ -178,7 +194,11 @@
     "image": "assets/publications/pub-14.jpg",
     "imageAlt": "Schematic of a permeable semi-circular body in a square enclosure with an inclined magnetic field.",
     "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Thermofluids (2023), CC BY-NC-ND 4.0",
-    "imageSource": "https://doi.org/10.1016/j.ijft.2023.100486"
+    "imageSource": "https://doi.org/10.1016/j.ijft.2023.100486",
+    "fullText": {
+      "url": "https://www.sciencedirect.com/science/article/pii/S266620272300201X",
+      "label": "Open access"
+    }
   },
   {
     "id": "pub-08",
@@ -223,7 +243,11 @@
     "image": "assets/publications/pub-07.jpg",
     "imageAlt": "Pin-fin heat sink with triangular, rhombus and hydrofoil fin configurations.",
     "imageCredit": "Figure 1, Ambreen et al., Case Studies in Thermal Engineering (2022), CC BY 4.0",
-    "imageSource": "https://doi.org/10.1016/j.csite.2022.101806"
+    "imageSource": "https://doi.org/10.1016/j.csite.2022.101806",
+    "fullText": {
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214157X22000521",
+      "label": "Open access"
+    }
   },
   {
     "id": "pub-10",
@@ -242,7 +266,11 @@
     "image": "assets/publications/pub-10.jpg",
     "imageAlt": "Solar collector channel with three metal-foam blocks along the bottom wall.",
     "imageCredit": "Figure 1, Anirudh & Dhinakaran, Renewable Energy (2021), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.renene.2021.02.145"
+    "imageSource": "https://doi.org/10.1016/j.renene.2021.02.145",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/21-Anirudh-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-12",
@@ -262,7 +290,11 @@
     "image": "assets/publications/pub-12.jpg",
     "imageAlt": "Computational domain with upstream and downstream square cylinders above a moving wall.",
     "imageCredit": "Figure 1, Rajpoot et al., Case Studies in Thermal Engineering (2021), CC BY-NC-ND 4.0",
-    "imageSource": "https://doi.org/10.1016/j.csite.2021.101042"
+    "imageSource": "https://doi.org/10.1016/j.csite.2021.101042",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/24-Rajendra-Dhinakaran-TandemRe100.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-16",
@@ -282,7 +314,11 @@
     "image": "assets/publications/pub-16.jpg",
     "imageAlt": "Domain with a heated semi-circular cylinder near a wall, shown in two orientations.",
     "imageCredit": "Figure 1, Rajpoot et al., Case Studies in Thermal Engineering (2021), CC BY-NC-ND 4.0",
-    "imageSource": "https://doi.org/10.1016/j.csite.2021.100967"
+    "imageSource": "https://doi.org/10.1016/j.csite.2021.100967",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/23-Rajendra-Dhinakaran-SemicircularNearWall.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-22",
@@ -321,7 +357,11 @@
     "image": "assets/publications/pub-01.jpg",
     "imageAlt": "Inclined solar collector channel filled with metal foam.",
     "imageCredit": "Figure 1, Anirudh & Dhinakaran, Renewable Energy (2020), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.renene.2019.09.038"
+    "imageSource": "https://doi.org/10.1016/j.renene.2019.09.038",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/20-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-00",
@@ -340,7 +380,11 @@
     "image": "assets/publications/pub-00.jpg",
     "imageAlt": "Solar collector channel with intermittent metal-foam blocks in four arrangements.",
     "imageCredit": "Figure 1, Anirudh & Dhinakaran, Renewable Energy (2020), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.renene.2019.06.015"
+    "imageSource": "https://doi.org/10.1016/j.renene.2019.06.015",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/19-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-02",
@@ -359,7 +403,11 @@
     "image": "assets/publications/pub-02.jpg",
     "imageAlt": "Electronics cooling loop with a porous block above LED chips.",
     "imageCredit": "Figure 1, Anirudh & Dhinakaran, International Journal of Heat and Mass Transfer (2018), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2018.06.003"
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2018.06.003",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/17-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-11",
@@ -375,11 +423,15 @@
     "label": "Journal article",
     "doi": null,
     "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:d1gkVwhDpl0C",
-    "summary": "Lattice Boltzmann simulations of flow and heat transfer from a heated permeable triangular cylinder in upward flow with aiding buoyancy, comparing apex-facing and side-facing orientations.",
+    "summary": "Lattice Boltzmann simulations of a permeable triangular cylinder, apex-facing and side-facing, under forced convection and aiding buoyancy for Re = 1–40 and Da = 10⁻⁶–10⁻². With buoyancy the side-facing orientation always sees less drag, and heat transfer rises with permeability and Richardson number.",
     "image": "assets/publications/pub-11.jpg",
     "imageAlt": "Domain for upward flow past a heated permeable triangular cylinder in two orientations.",
     "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Heat and Mass Transfer (2018), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.09.115"
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.09.115",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/14-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-04",
@@ -395,11 +447,15 @@
     "label": "Journal article",
     "doi": null,
     "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:2osOgNQ5qMEC",
-    "summary": "Lattice Boltzmann simulations of unsteady flow and heat transfer from a heated, diamond-shaped porous cylinder, motivated by porous pin-fin arrangements for cooling power devices.",
+    "summary": "Lattice Boltzmann simulations of unsteady flow and heat transfer around a permeable diamond-shaped cylinder for Re = 50–150 and Da = 10⁻⁶–10⁻². Higher permeability weakens vortex shedding, lowers drag and raises heat transfer; Nusselt number correlations and a comparison with a square cylinder are given.",
     "image": "assets/publications/pub-04.jpg",
     "imageAlt": "Porous pin-fin cooling application and the domain around a diamond-shaped porous cylinder.",
     "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Heat and Mass Transfer (2018), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.11.010"
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.11.010",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/15-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-03",
@@ -418,7 +474,11 @@
     "image": "assets/publications/pub-03.jpg",
     "imageAlt": "Computational domain around a porous square cylinder in uniform flow.",
     "imageCredit": "Figure 1, Anirudh & Dhinakaran, Journal of Wind Engineering and Industrial Aerodynamics (2018), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.jweia.2018.03.004"
+    "imageSource": "https://doi.org/10.1016/j.jweia.2018.03.004",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/16-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   },
   {
     "id": "pub-06",
@@ -434,10 +494,14 @@
     "label": "Journal article",
     "doi": null,
     "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:qjMakFHDy7sC",
-    "summary": "Lattice Boltzmann analysis of mixed convection from a heated permeable square cylinder in vertical upward flow, motivated by reactor-core fuel and control-rod arrays treated as a porous bluff body.",
+    "summary": "Lattice Boltzmann analysis of mixed convection from a porous square cylinder with aiding buoyancy, for Re = 2–40, Da = 10⁻⁶–10⁻² and Ri = 0–1. At Re = 40 and Da = 10⁻², buoyancy raises the mean Nusselt number by 18% at Ri = 0.5 and 34% at Ri = 1 over forced convection.",
     "image": "assets/publications/pub-06.jpg",
     "imageAlt": "Nuclear reactor core whose fuel and control-rod array is modelled as a porous bluff body.",
     "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Heat and Mass Transfer (2017), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.08.033"
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.08.033",
+    "fullText": {
+      "url": "https://people.iiti.ac.in/~sdhina/images/Publications/13-Dhinakaran.pdf",
+      "label": "PDF"
+    }
   }
 ]
