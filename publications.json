@@ -75,7 +75,11 @@
     "image": "assets/publications/pub-15.jpg",
     "imageAlt": "A pile of biochar.",
     "imageCredit": "Illustrative photo: Oregon Department of Forestry, Wikimedia Commons, CC BY 2.0",
-    "imageSource": "https://commons.wikimedia.org/wiki/File:Biochar_pile.jpg"
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Biochar_pile.jpg",
+    "fullText": {
+      "url": "mailto:anirudhk@outlook.in?subject=PDF%20request%3A%20Understanding%20the%20role%20of%20CFD%20in%20microwave-assisted%20pyrolysis%20for%20biomass%20conversion",
+      "label": "Request PDF"
+    }
   },
   {
     "id": "pub-19",
@@ -147,8 +151,8 @@
     "imageCredit": "Figure 1, Raje et al., International Journal of Thermofluids (2023), CC BY 4.0",
     "imageSource": "https://doi.org/10.1016/j.ijft.2022.100275",
     "fullText": {
-      "url": "https://www.sciencedirect.com/science/article/pii/S2666202722001380",
-      "label": "Open access"
+      "url": "assets/publications/pub-05.pdf",
+      "label": "PDF"
     }
   },
   {
@@ -174,7 +178,11 @@
     "image": "assets/publications/pub-09.jpg",
     "imageAlt": "Graphical abstract linking pyrolysis reactor types to CFD model categories.",
     "imageCredit": "Graphical abstract, Dadi et al., Journal of Analytical and Applied Pyrolysis (2023), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.jaap.2023.106163"
+    "imageSource": "https://doi.org/10.1016/j.jaap.2023.106163",
+    "fullText": {
+      "url": "mailto:anirudhk@outlook.in?subject=PDF%20request%3A%20Recent%20advancements%20of%20CFD%20and%20heat%20transfer%20studies%20in%20pyrolysis%3A%20a%20review",
+      "label": "Request PDF"
+    }
   },
   {
     "id": "pub-14",
@@ -196,8 +204,8 @@
     "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Thermofluids (2023), CC BY-NC-ND 4.0",
     "imageSource": "https://doi.org/10.1016/j.ijft.2023.100486",
     "fullText": {
-      "url": "https://www.sciencedirect.com/science/article/pii/S266620272300201X",
-      "label": "Open access"
+      "url": "assets/publications/pub-14.pdf",
+      "label": "PDF"
     }
   },
   {
@@ -220,7 +228,11 @@
     "image": "assets/publications/pub-08.jpg",
     "imageAlt": "Graphical abstract: sawdust torrefaction, microwave pyrolysis and biochar characterisation.",
     "imageCredit": "Graphical abstract, Potnuri et al., Journal of Analytical and Applied Pyrolysis (2023), © Elsevier",
-    "imageSource": "https://doi.org/10.1016/j.jaap.2023.106191"
+    "imageSource": "https://doi.org/10.1016/j.jaap.2023.106191",
+    "fullText": {
+      "url": "mailto:anirudhk@outlook.in?subject=PDF%20request%3A%20Two-step%20synthesis%20of%20biochar%20using%20torrefaction%20and%20microwave-assisted%20pyrolysis%3A%20understanding%20the%20effects%20of%20torrefaction%20temperature%20and%20catalyst%20loading",
+      "label": "Request PDF"
+    }
   },
   {
     "id": "pub-07",
@@ -245,8 +257,8 @@
     "imageCredit": "Figure 1, Ambreen et al., Case Studies in Thermal Engineering (2022), CC BY 4.0",
     "imageSource": "https://doi.org/10.1016/j.csite.2022.101806",
     "fullText": {
-      "url": "https://www.sciencedirect.com/science/article/pii/S2214157X22000521",
-      "label": "Open access"
+      "url": "assets/publications/pub-07.pdf",
+      "label": "PDF"
     }
   },
   {
