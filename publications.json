@@ -19,7 +19,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": "10.1038/s41598-025-94627-5",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:7PzlFSSx8tAC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:7PzlFSSx8tAC",
+    "summary": "A finite-element model built from a patient CBCT scan compares T, Cherry and open helical loops at 10°, 15° and 20° tip-back for protracting the mandibular second molar. All three loops performed alike; a 15° tip-back moved the molar with negligible tipping and no extrusion or intrusion.",
+    "image": "assets/publications/pub-17.jpg",
+    "imageAlt": "Finite-element models of the molar with the T loop, Cherry loop and open helical loop.",
+    "imageCredit": "Figure 1, Mehta et al., Scientific Reports (2025), CC BY-NC-ND 4.0",
+    "imageSource": "https://doi.org/10.1038/s41598-025-94627-5"
   },
   {
     "id": "pub-20",
@@ -36,7 +41,12 @@
     "type": "chapter",
     "label": "Conference chapter",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:9ZlFYXVOiuMC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:9ZlFYXVOiuMC",
+    "summary": "Uses OpenFOAM to examine the secondary wake mode instability in the flow behind a two-dimensional cylinder.",
+    "image": "assets/publications/pub-20.jpg",
+    "imageAlt": "Smoke visualisation of a Kármán vortex street behind a cylinder.",
+    "imageCredit": "Illustrative photo: Jürgen Wagner, Wikimedia Commons, CC BY-SA 4.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karmansche_Wirbelstr_kleine_Re.JPG"
   },
   {
     "id": "pub-15",
@@ -52,7 +62,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:aqlVkmm33-oC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:aqlVkmm33-oC",
+    "summary": "Reviews how CFD helps explain microwave-assisted pyrolysis of biomass, including microwave absorption and the distribution of thermal and electromagnetic fields. It identifies research gaps and argues for pairing simulations with experiments to predict bio-oil, biochar and syngas yields.",
+    "image": "assets/publications/pub-15.jpg",
+    "imageAlt": "A pile of biochar.",
+    "imageCredit": "Illustrative photo: Oregon Department of Forestry, Wikimedia Commons, CC BY 2.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Biochar_pile.jpg"
   },
   {
     "id": "pub-19",
@@ -70,7 +85,12 @@
     "type": "chapter",
     "label": "Book chapter",
     "doi": "10.1201/9781003331957-9",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:mVmsd5A6BfQC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:mVmsd5A6BfQC",
+    "summary": "Reviews phase change materials for cooling high-power-density electronics: passive options such as PCM-enhanced heat sinks, heat pipes and thermal interface materials, and hybrid systems that pair PCMs with air, liquid or thermoelectric cooling.",
+    "image": "assets/publications/pub-19.jpg",
+    "imageAlt": "A CPU heat sink with copper heat pipes and a fan.",
+    "imageCredit": "Illustrative photo: Hustvedt, Wikimedia Commons, CC BY-SA 3.0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Heatsink_with_heat_pipes.jpg"
   },
   {
     "id": "pub-13",
@@ -88,7 +108,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:qxL8FJ1GzNcC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:qxL8FJ1GzNcC",
+    "summary": "A review of CFD modelling for biomass pyrolysis in conventional and microwave-assisted reactors: reaction kinetics and governing equations, the role of microwave wavelength and penetration depth, and the main modelling challenges, with directions for future work.",
+    "image": "assets/publications/pub-13.jpg",
+    "imageAlt": "Diagram linking pyrolysis variables, CFD quantities and optimisation outcomes.",
+    "imageCredit": "Figure 1, Kulkarni et al., Energies (2023), CC BY 4.0",
+    "imageSource": "https://doi.org/10.3390/en16237839"
   },
   {
     "id": "pub-05",
@@ -103,7 +128,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:KlAtU1dfN6UC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:KlAtU1dfN6UC",
+    "summary": "Entropy generation in mixed-convection flow of a non-Newtonian Jeffrey fluid through an inclined porous pipe with convective walls under a magnetic field. Entropy generation and Bejan numbers are mapped against the Hartmann, Darcy, Grashof, Brinkman and Biot numbers.",
+    "image": "assets/publications/pub-05.jpg",
+    "imageAlt": "Schematic of Jeffrey fluid flow in an inclined circular pipe.",
+    "imageCredit": "Figure 1, Raje et al., International Journal of Thermofluids (2023), CC BY 4.0",
+    "imageSource": "https://doi.org/10.1016/j.ijft.2022.100275"
   },
   {
     "id": "pub-09",
@@ -123,7 +153,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": "10.1016/j.jaap.2023.106163",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:ULOm3_A8WrAC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:ULOm3_A8WrAC",
+    "summary": "A critical review of fluid-flow and heat-transport modelling in conventional, microwave-assisted and solar-assisted pyrolysis reactors. It concludes that CFD models need better validation and accuracy, and sets out steps to broaden their use.",
+    "image": "assets/publications/pub-09.jpg",
+    "imageAlt": "Graphical abstract linking pyrolysis reactor types to CFD model categories.",
+    "imageCredit": "Graphical abstract, Dadi et al., Journal of Analytical and Applied Pyrolysis (2023), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.jaap.2023.106163"
   },
   {
     "id": "pub-14",
@@ -138,7 +173,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:4TOpqqG69KYC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:4TOpqqG69KYC",
+    "summary": "Lattice Boltzmann simulations of double-diffusive natural convection around a heated, permeable semi-circular body in a cold square enclosure under a magnetic field. Raising buoyancy, permeability and the field angle improves heat and mass transfer.",
+    "image": "assets/publications/pub-14.jpg",
+    "imageAlt": "Schematic of a permeable semi-circular body in a square enclosure with an inclined magnetic field.",
+    "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Thermofluids (2023), CC BY-NC-ND 4.0",
+    "imageSource": "https://doi.org/10.1016/j.ijft.2023.100486"
   },
   {
     "id": "pub-08",
@@ -155,7 +195,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:_kc_bZDykSQC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:_kc_bZDykSQC",
+    "summary": "Sawdust torrefied at 125–175 °C was converted to biochar by microwave-assisted pyrolysis with a graphite susceptor and a KOH catalyst, giving biochar yields of 24.2–48.1 wt%.",
+    "image": "assets/publications/pub-08.jpg",
+    "imageAlt": "Graphical abstract: sawdust torrefaction, microwave pyrolysis and biochar characterisation.",
+    "imageCredit": "Graphical abstract, Potnuri et al., Journal of Analytical and Applied Pyrolysis (2023), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.jaap.2023.106191"
   },
   {
     "id": "pub-07",
@@ -173,7 +218,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": "10.1016/j.csite.2022.101806",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:5nxA0vEk-isC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:5nxA0vEk-isC",
+    "summary": "Eulerian–Lagrangian simulations of MWCNT and MWCNT/graphene-nanoplatelet nanofluids in pin-fin heat sinks for electronics cooling. Triangular fins dissipated the most heat; rhombus fins scored best overall because of their lower pressure drop.",
+    "image": "assets/publications/pub-07.jpg",
+    "imageAlt": "Pin-fin heat sink with triangular, rhombus and hydrofoil fin configurations.",
+    "imageCredit": "Figure 1, Ambreen et al., Case Studies in Thermal Engineering (2022), CC BY 4.0",
+    "imageSource": "https://doi.org/10.1016/j.csite.2022.101806"
   },
   {
     "id": "pub-10",
@@ -187,7 +237,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:eQOLeE2rZwMC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:eQOLeE2rZwMC",
+    "summary": "OpenFOAM simulations of a direct-absorption flat-plate solar collector with three conjugated porous blocks along the insulated bottom wall. The blocks push flow toward the absorber plate; performance is best with a short block at the inlet and a tall one at the outlet.",
+    "image": "assets/publications/pub-10.jpg",
+    "imageAlt": "Solar collector channel with three metal-foam blocks along the bottom wall.",
+    "imageCredit": "Figure 1, Anirudh & Dhinakaran, Renewable Energy (2021), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.renene.2021.02.145"
   },
   {
     "id": "pub-12",
@@ -202,7 +257,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:ufrVoPGSRksC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:ufrVoPGSRksC",
+    "summary": "Flow past two tandem square cylinders near a moving wall at Re = 100, for spacing ratios 0.5–8 and wall-gap ratios 0.1–4. The moving wall largely decides when vortex shedding starts and stops; drag is highest on a lone cylinder and lowest on the downstream one.",
+    "image": "assets/publications/pub-12.jpg",
+    "imageAlt": "Computational domain with upstream and downstream square cylinders above a moving wall.",
+    "imageCredit": "Figure 1, Rajpoot et al., Case Studies in Thermal Engineering (2021), CC BY-NC-ND 4.0",
+    "imageSource": "https://doi.org/10.1016/j.csite.2021.101042"
   },
   {
     "id": "pub-16",
@@ -217,7 +277,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:WF5omc3nYNoC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:WF5omc3nYNoC",
+    "summary": "Forced convection from a heated semi-circular cylinder in the shear layer of a stationary wall, with its curved or flat face upstream, at Re = 100–200 and gap ratios 0.1–0.5. The curved-forebody orientation gives the largest heat-transfer enhancement; Nusselt number correlations are provided.",
+    "image": "assets/publications/pub-16.jpg",
+    "imageAlt": "Domain with a heated semi-circular cylinder near a wall, shown in two orientations.",
+    "imageCredit": "Figure 1, Rajpoot et al., Case Studies in Thermal Engineering (2021), CC BY-NC-ND 4.0",
+    "imageSource": "https://doi.org/10.1016/j.csite.2021.100967"
   },
   {
     "id": "pub-22",
@@ -232,7 +297,12 @@
     "type": "chapter",
     "label": "Book chapter",
     "doi": "10.1007/978-981-33-6456-1_13",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:LkGwnXOMwfcC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:LkGwnXOMwfcC",
+    "summary": "A book chapter on phase change materials: types, properties and enhancement techniques, modelling approaches, and applications in buildings, thermal management of batteries, electronics and photovoltaics, and high-temperature solar thermal storage.",
+    "image": "assets/publications/pub-22.jpg",
+    "imageAlt": "Temperature against energy content as a phase change material melts and solidifies.",
+    "imageCredit": "Illustrative diagram, Wikimedia Commons, CC0",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Phase_Change_Material_graph.webp"
   },
   {
     "id": "pub-01",
@@ -246,7 +316,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": "10.1016/j.renene.2019.09.038",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:UeHWp8X0CEIC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:UeHWp8X0CEIC",
+    "summary": "OpenFOAM study of a flat-plate solar collector channel filled with porous metal foam, modelling radiation with the Rosseland approximation and buoyancy at inclinations up to 45°. The foam improves thermal mixing, and the largest gains come at intermediate tilt angles.",
+    "image": "assets/publications/pub-01.jpg",
+    "imageAlt": "Inclined solar collector channel filled with metal foam.",
+    "imageCredit": "Figure 1, Anirudh & Dhinakaran, Renewable Energy (2020), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.renene.2019.09.038"
   },
   {
     "id": "pub-00",
@@ -260,7 +335,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:9yKSN-GCB0IC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:9yKSN-GCB0IC",
+    "summary": "Intermittent porous metal-foam blocks in a flat-plate solar collector, studied in OpenFOAM across block arrangements, counts, heights and permeabilities. More blocks improve mixing but cost pressure drop; a few short blocks perform best overall, ahead of a continuous porous layer.",
+    "image": "assets/publications/pub-00.jpg",
+    "imageAlt": "Solar collector channel with intermittent metal-foam blocks in four arrangements.",
+    "imageCredit": "Figure 1, Anirudh & Dhinakaran, Renewable Energy (2020), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.renene.2019.06.015"
   },
   {
     "id": "pub-02",
@@ -274,7 +354,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": "10.1016/j.ijheatmasstransfer.2018.06.003",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:u5HHmVD_uO8C"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:u5HHmVD_uO8C",
+    "summary": "Forced convection from a porous square cylinder for Prandtl numbers 0.71–100, Re = 1–40 and Da = 10⁻⁶–10⁻², using a modified OpenFOAM solver with the Darcy–Brinkman–Forchheimer model. Correlations for the mean Nusselt number are provided.",
+    "image": "assets/publications/pub-02.jpg",
+    "imageAlt": "Electronics cooling loop with a porous block above LED chips.",
+    "imageCredit": "Figure 1, Anirudh & Dhinakaran, International Journal of Heat and Mass Transfer (2018), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2018.06.003"
   },
   {
     "id": "pub-11",
@@ -289,7 +374,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:d1gkVwhDpl0C"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:d1gkVwhDpl0C",
+    "summary": "Lattice Boltzmann simulations of flow and heat transfer from a heated permeable triangular cylinder in upward flow with aiding buoyancy, comparing apex-facing and side-facing orientations.",
+    "image": "assets/publications/pub-11.jpg",
+    "imageAlt": "Domain for upward flow past a heated permeable triangular cylinder in two orientations.",
+    "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Heat and Mass Transfer (2018), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.09.115"
   },
   {
     "id": "pub-04",
@@ -304,7 +394,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:2osOgNQ5qMEC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:2osOgNQ5qMEC",
+    "summary": "Lattice Boltzmann simulations of unsteady flow and heat transfer from a heated, diamond-shaped porous cylinder, motivated by porous pin-fin arrangements for cooling power devices.",
+    "image": "assets/publications/pub-04.jpg",
+    "imageAlt": "Porous pin-fin cooling application and the domain around a diamond-shaped porous cylinder.",
+    "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Heat and Mass Transfer (2018), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.11.010"
   },
   {
     "id": "pub-03",
@@ -318,7 +413,12 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:u-x6o8ySG0sC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:u-x6o8ySG0sC",
+    "summary": "Locates the onset of vortex shedding behind a porous square cylinder for 41 ≤ Re ≤ 50 across a range of permeability and porosity, using OpenFOAM with the Darcy–Brinkman–Forchheimer model. A shedding-frequency correlation is given, with unsteady results up to Re = 150.",
+    "image": "assets/publications/pub-03.jpg",
+    "imageAlt": "Computational domain around a porous square cylinder in uniform flow.",
+    "imageCredit": "Figure 1, Anirudh & Dhinakaran, Journal of Wind Engineering and Industrial Aerodynamics (2018), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.jweia.2018.03.004"
   },
   {
     "id": "pub-06",
@@ -333,6 +433,11 @@
     "type": "journal",
     "label": "Journal article",
     "doi": null,
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:qjMakFHDy7sC"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=WoYtYLwAAAAJ&pagesize=100&citation_for_view=WoYtYLwAAAAJ:qjMakFHDy7sC",
+    "summary": "Lattice Boltzmann analysis of mixed convection from a heated permeable square cylinder in vertical upward flow, motivated by reactor-core fuel and control-rod arrays treated as a porous bluff body.",
+    "image": "assets/publications/pub-06.jpg",
+    "imageAlt": "Nuclear reactor core whose fuel and control-rod array is modelled as a porous bluff body.",
+    "imageCredit": "Figure 1, Vijaybabu et al., International Journal of Heat and Mass Transfer (2017), © Elsevier",
+    "imageSource": "https://doi.org/10.1016/j.ijheatmasstransfer.2017.08.033"
   }
 ]

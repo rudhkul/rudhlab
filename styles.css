@@ -113,6 +113,13 @@ a.row{transition:background .15s}
 a.row:hover h3{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .subhead{font-size:15px;font-weight:500;margin:64px 0 16px}
 
+/* Funded projects: photo beside the row */
+.project{display:grid;grid-template-columns:220px minmax(0,1fr);gap:0 32px;padding-block:24px;border-bottom:1px solid var(--line)}
+.project .row{padding:0;border:0;align-content:start}
+.project img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:6px;background:var(--soft)}
+.project figcaption{margin-top:6px;font-size:12px;line-height:1.4;color:var(--faint)}
+.project figcaption a:hover{color:var(--muted)}
+
 /* Simulation grid */
 .sims{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px}
 .sim button{display:block;width:100%;text-align:left}
@@ -125,7 +132,13 @@ a.row:hover h3{text-decoration:underline;text-underline-offset:3px;text-decorati
 
 /* Publications */
 .pubs{border-top:1px solid var(--line)}
-.pub{padding-block:22px;border-bottom:1px solid var(--line)}
+.pub{display:grid;grid-template-columns:184px minmax(0,1fr);gap:0 28px;align-items:start;padding-block:24px;border-bottom:1px solid var(--line)}
+/* Figures are white-background line art, so the tile stays white in dark mode too. */
+.pub-thumb{aspect-ratio:4/3;padding:6px;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.pub-thumb img{width:100%;height:100%;object-fit:contain}
+.pub-thumb.photo{padding:0;background:var(--soft)}
+.pub-thumb.photo img{object-fit:cover}
+.pub .summary{margin-top:10px;font-size:15px;line-height:1.55;max-width:72ch}
 .pub h3{font-size:16.5px;font-weight:500;line-height:1.4;letter-spacing:-.01em;max-width:72ch}
 .pub h3 a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .pub .authors{margin-top:6px;font-size:14.5px;color:var(--muted)}
@@ -180,6 +193,11 @@ a.row:hover h3{text-decoration:underline;text-underline-offset:3px;text-decorati
 .chip span{opacity:.6;margin-left:4px;font-variant-numeric:tabular-nums}
 .empty{padding-block:40px;color:var(--muted)}
 .footnote{margin-top:32px;font-size:13.5px;color:var(--faint);max-width:80ch}
+.credits{margin-top:16px;font-size:13px;color:var(--faint)}
+.credits summary{cursor:pointer;width:max-content;color:var(--muted)}
+.credits summary:hover{color:var(--fg)}
+.credits ul{display:grid;gap:4px;margin-top:10px}
+.credits a:hover{color:var(--fg)}
 
 /* Profile */
 .profile-head{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:48px;align-items:end}
@@ -259,6 +277,9 @@ dialog video{width:100%;max-height:62vh;background:#000}
 }
 @media (max-width:760px){
   .row{grid-template-columns:1fr}
+  .project{grid-template-columns:1fr;gap:16px}
+  .project figure{max-width:420px}
+  .pub{grid-template-columns:120px minmax(0,1fr);gap:0 18px}
   .row .meta{text-align:left;grid-row:auto}
   .entry{grid-template-columns:1fr}
   .profile-head{grid-template-columns:1fr;gap:28px}
@@ -269,6 +290,8 @@ dialog video{width:100%;max-height:62vh;background:#000}
 @media (max-width:560px){
   .sims,.people{grid-template-columns:1fr}
   .chips{width:100%}
+  .pub{grid-template-columns:1fr;gap:14px}
+  .pub-thumb{aspect-ratio:16/9}
   .dialog-body{padding:22px 20px 24px}
 }
 
@@ -283,5 +306,6 @@ dialog video{width:100%;max-height:62vh;background:#000}
   .profile-head img{display:none}
   .cv-section{grid-template-columns:120pt 1fr;padding-block:12pt;break-inside:avoid}
   .entry{grid-template-columns:110pt 1fr}
-  .pub{break-inside:avoid}
+  .pub{break-inside:avoid;grid-template-columns:1fr}
+  .pub-thumb,.project figure{display:none}
 }
