@@ -6,10 +6,22 @@ window.LAB = {
   email: 'anirudh.kulkarni@sot.pdpu.ac.in',
   // Add a reviewed CV PDF in assets/, then set e.g. 'assets/anirudh-kulkarni-cv.pdf'.
   cv: null,
-  // Talks and news. Dates are YYYY-MM-DD; add `end` for multi-day events.
+  // Talks and news. Dates are YYYY-MM-DD (or YYYY-MM when only the month is known); add `end` for multi-day events.
   // Items whose end date has not passed are listed as Upcoming automatically.
   // Optional fields: host, location, url, linkLabel, kind (defaults to 'Talk').
   news: [
+    {
+      start: '2026-09',
+      title: 'Successful progress review of the stepwells passive-cooling project',
+      event: 'Indian Knowledge Systems Division, Ministry of Education',
+      kind: 'Project update'
+    },
+    {
+      start: '2026-09',
+      title: 'Successful progress review of the LBM–ML underwater rheology project',
+      event: 'IIT Guwahati Technology Innovation Hub',
+      kind: 'Project update'
+    },
     {
       start: '2026-11-03', end: '2026-11-06',
       title: 'Porous media modelling with OpenFOAM',

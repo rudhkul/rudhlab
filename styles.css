@@ -187,6 +187,11 @@ a.row:hover h3{text-decoration:underline;text-underline-offset:3px;text-decorati
 /* Contact */
 .contact h2{font-size:clamp(28px,3.6vw,44px);font-weight:500;letter-spacing:-.03em;line-height:1.1}
 .contact .big{display:inline-block;margin-top:20px;font-size:clamp(18px,2vw,22px);overflow-wrap:anywhere}
+.email-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.contact .email-line{margin-top:20px}
+.contact .email-line .big{margin-top:0}
+.copy{height:30px;padding:0 12px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--muted);transition:color .15s,border-color .15s}
+.copy:hover{color:var(--fg);border-color:var(--faint)}
 .contact .alt-email{margin-top:10px;font-size:15px;color:var(--muted)}
 .contact ul{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:36px;font-size:15px;color:var(--muted)}
 .contact ul a:hover{color:var(--fg)}
@@ -215,7 +220,8 @@ a.row:hover h3{text-decoration:underline;text-underline-offset:3px;text-decorati
 .chip{height:34px;padding:0 14px;border-radius:999px;font-size:14px;color:var(--muted);border:1px solid var(--line);transition:all .15s}
 .chip:hover{color:var(--fg);border-color:var(--faint)}
 .chip[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
-.chip span{opacity:.6;margin-left:4px;font-variant-numeric:tabular-nums}
+.chip span{margin-left:4px;font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"] span{opacity:.7}
 .empty{padding-block:40px;color:var(--muted)}
 .footnote{margin-top:32px;font-size:14.5px;color:var(--faint);max-width:80ch}
 .credits{margin-top:16px;font-size:14px;color:var(--faint)}
@@ -278,6 +284,14 @@ a.row:hover h3{text-decoration:underline;text-underline-offset:3px;text-decorati
 .faq summary::after{content:"+";float:right;color:var(--muted)}
 .faq details[open] summary::after{content:"−"}
 .faq details p{margin-top:8px;color:var(--muted);max-width:68ch}
+
+/* Getting started: reading and code lists */
+.refs{display:grid;gap:22px;max-width:72ch}
+.refs li>a,.refs .title{font-weight:500}
+.refs .by{display:block;margin-top:2px;font-size:15px;color:var(--muted)}
+.refs p{margin-top:4px;font-size:15.5px;color:var(--muted)}
+.cv-section .prose + .refs{margin-top:20px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em}
 
 /* Publications: year jump links */
 .years{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 28px;font-size:15px;color:var(--muted)}

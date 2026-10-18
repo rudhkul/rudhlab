@@ -50,6 +50,13 @@ if (LAB.email) { const a = $('#contact-primary'); if (a) { a.href = 'mailto:' + 
 const cv = $('#download-cv'); if (cv && LAB.cv) { cv.href = LAB.cv; cv.parentElement.hidden = false; }
 $('#print-profile')?.addEventListener('click', () => window.print());
 
+$$('[data-copy]').forEach(b => b.addEventListener('click', async () => {
+  const label = b.textContent;
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = 'Copied'; }
+  catch (_) { b.textContent = 'Copy failed'; }
+  setTimeout(() => { b.textContent = label; }, 2000);
+}));
+
 // Click-to-play players: the poster stays still until a visitor asks for motion.
 function activate(player) {
   const video = player.querySelector('video');
@@ -73,12 +80,16 @@ if (sims) {
   LAB.studies.filter(s => s.type === 'simulation' && s.media && s.media.src !== featured).forEach(s => {
     const card = document.createElement('article');
     card.className = 'sim';
-    card.innerHTML = `<button type="button" data-study="${s.id}"><div class="player"><img alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"><span>${PLAY}</span></span></div><h3></h3><p></p></button>`;
-    const img = card.querySelector('img');
-    img.src = s.media.poster || s.media.src;
+    card.innerHTML = `<button type="button" data-study="${s.id}"><div class="player"><img alt="" loading="lazy" decoding="async"><span class="play" aria-hidden="true"><span>${PLAY}</span></span></div><h3></h3><p></p><span class="visually-hidden">Open video and notes</span></button>`;
+    const img = card.querySelector('img'), poster = s.media.poster || s.media.src;
+    // tools/make-webp.py writes full-size and 640 px WebP copies beside each poster.
+    if (/\.jpg$/.test(poster)) {
+      img.srcset = `${poster.replace(/\.jpg$/, '.640.webp')} 640w, ${poster.replace(/\.jpg$/, '.webp')} 1280w`;
+      img.sizes = '(max-width:560px) calc(100vw - 32px), (max-width:960px) 45vw, 300px';
+    }
+    img.src = poster;
     card.querySelector('h3').textContent = s.title;
     card.querySelector('p').textContent = s.description;
-    card.querySelector('button').setAttribute('aria-label', `${s.title}. Open video and notes`);
     sims.append(card);
   });
 }
@@ -98,16 +109,18 @@ if (codeList) {
 
 // News and talks, from content.js. Upcoming vs past is decided by today's date.
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const day = iso => { const [y, m, d] = iso.split('-').map(Number); return {y, m, d, t: new Date(y, m - 1, d).getTime()}; };
+const day = iso => { const [y, m, d = 1] = iso.split('-').map(Number); return {y, m, d, t: new Date(y, m - 1, d).getTime()}; };
 function when(item) {
   const a = day(item.start), b = day(item.end || item.start);
+  if (item.start.length === 7 && !item.end) return `${MONTHS[a.m - 1]} ${a.y}`;
   if (a.t === b.t) return `${a.d} ${MONTHS[a.m - 1]} ${a.y}`;
   if (a.y === b.y && a.m === b.m) return `${a.d}–${b.d} ${MONTHS[a.m - 1]} ${a.y}`;
   if (a.y === b.y) return `${a.d} ${MONTHS[a.m - 1]} – ${b.d} ${MONTHS[b.m - 1]} ${a.y}`;
   return `${a.d} ${MONTHS[a.m - 1]} ${a.y} – ${b.d} ${MONTHS[b.m - 1]} ${b.y}`;
 }
 const today = (() => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime(); })();
-const news = (LAB.news || []).map(n => ({...n, upcoming: day(n.end || n.start).t >= today}));
+const lastDay = iso => iso.length === 7 ? (({y, m}) => new Date(y, m, 0).getTime())(day(iso)) : day(iso).t;
+const news = (LAB.news || []).map(n => ({...n, upcoming: lastDay(n.end || n.start) >= today}));
 const upcoming = news.filter(n => n.upcoming).sort((a, b) => day(a.start).t - day(b.start).t);
 const past = news.filter(n => !n.upcoming).sort((a, b) => day(b.start).t - day(a.start).t);
 function newsEntry(n) {

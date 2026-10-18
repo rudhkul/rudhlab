@@ -12,13 +12,15 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 - `publications.html`: full bibliography grouped by year, with search, topic filters, a Free to read filter, and year jump links.
 - `profile.html`: concise academic profile with a print-to-PDF layout. This is not a full CV.
 - `news.html`: upcoming and past talks, workshops, and news (rendered from `LAB.news`).
-- `careers.html`: JRF / PhD positions, example topics, what students learn, who we are looking for, an application checklist, and FAQs. Add fellowship and eligibility details to each position when a call is announced.
+- `careers.html`: JRF / PhD positions, example topics, what students learn, who we are looking for, an application checklist, and FAQs. Add fellowship and eligibility details to each position when a call is announced. Its link preview uses `assets/og-careers.jpg`.
+- `getting-started.html`: a self-paced path for students: free CFD material, the lid-driven cavity and natural-convection repositories as first exercises, method and GPU references, tools, and the AI/ML-in-CFD workshop notebook. Linked from Careers and the homepage student card.
 - `content.js`: talks/news, simulation and code entries, public email, optional CV PDF path.
 - `styles.css`: the single design system (tokens, layout, dark mode, print).
-- `app.js`: theme, mobile menu, back-to-top button, click-to-play video, simulation dialog, news rendering and the homepage "Next/Latest" line, publication filters.
+- `app.js`: theme, mobile menu, back-to-top button, copy-email buttons (`data-copy`), click-to-play video, simulation dialog, news rendering and the homepage "Next/Latest" line, publication filters.
 - `404.html`: not-found page; uses root-relative links because GitHub Pages serves it at any missing path.
 - `sitemap.xml`, `robots.txt`: search-engine discovery for https://rudhlab.com. Update `lastmod` when a page changes substantially.
-- `assets/`: portrait, logo mark, `og-image.jpg` (1200 × 630 link-preview image), and `media/` simulation clips with poster frames.
+- `assets/`: portrait, logo mark, `og-image.jpg` and `og-careers.jpg` (1200 × 630 link-preview images), and `media/` simulation clips with poster frames.
+- `tools/make-webp.py`: makes the WebP copies that pages offer through `srcset` (not deployed). Run `python3 tools/make-webp.py` after adding or replacing a JPEG in `assets/publications`, `projects`, `media` or `research`, then add a matching `srcset` (copy an existing `<img>`). Simulation posters added through `content.js` pick up their WebP copies automatically.
 
 Each page has a canonical URL, Open Graph / Twitter tags for link previews, and the homepage and profile carry schema.org JSON-LD (ResearchOrganization and Person) so search engines can identify the lab and its lead.
 
@@ -30,13 +32,13 @@ Add an object to `LAB.news` in `content.js`; order does not matter. Items whose 
 
 ```js
 {
-  start: '2026-11-03', end: '2026-11-06',   // YYYY-MM-DD; omit `end` for a one-day event
+  start: '2026-11-03', end: '2026-11-06',   // YYYY-MM-DD, or YYYY-MM when only the month is known; omit `end` for a one-day event
   title: 'Talk title',
   event: 'Workshop or conference name',
   host: 'Organising department or institution',   // optional
   location: 'Online',                             // optional
   url: 'https://…', linkLabel: 'Event page',      // optional
-  kind: 'Award'                                   // optional; defaults to Talk
+  kind: 'Award'                                   // optional; defaults to Talk (e.g. 'Project update')
 }
 ```
 
