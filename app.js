@@ -7,7 +7,15 @@ $('#year')?.replaceChildren(String(new Date().getFullYear()));
 
 // Header border once the page scrolls.
 const header = $('.header');
-const onScroll = () => header?.classList.toggle('scrolled', scrollY > 8);
+const toTop = document.createElement('button');
+toTop.type = 'button'; toTop.className = 'to-top'; toTop.setAttribute('aria-label', 'Back to top');
+toTop.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+toTop.addEventListener('click', () => { scrollTo({top: 0}); $('.brand')?.focus({preventScroll: true}); });
+document.body.append(toTop);
+const onScroll = () => {
+  header?.classList.toggle('scrolled', scrollY > 8);
+  toTop.classList.toggle('show', scrollY > innerHeight * 1.5);
+};
 addEventListener('scroll', onScroll, {passive: true}); onScroll();
 
 // Mobile menu.
@@ -128,6 +136,15 @@ fill($('#news-upcoming'), upcoming, 'No upcoming talks at the moment.');
 fill($('#news-past'), past, 'Nothing listed yet.');
 fill($('#news-latest'), [...upcoming, ...past].slice(0, 3), 'Nothing listed yet.');
 
+// One-line "Next / Latest" pointer in the homepage hero.
+const latest = $('#latest'), lead = upcoming[0] || past[0];
+if (latest && lead) {
+  const a = document.createElement('a');
+  a.className = 'link'; a.href = 'news.html'; a.textContent = lead.title;
+  latest.append((lead.upcoming ? 'Next: ' : 'Latest: '), a, ' · ' + when(lead));
+  latest.hidden = false;
+}
+
 // Study dialog.
 const dialog = $('#study-dialog');
 let opener = null;
@@ -170,24 +187,27 @@ dialog?.addEventListener('close', () => { $('#dialog-media').replaceChildren(); 
 // Publication search and filters run on the server-rendered list.
 const list = $('#publication-list');
 if (list) {
-  let kind = 'all';
-  const search = $('#publication-search'), entries = $$('.pub'), groups = $$('.year-group');
+  let topic = 'all';
+  const search = $('#publication-search'), free = $('#publication-free'), entries = $$('.pub'), groups = $$('.year-group');
   function filter() {
-    const q = search.value.trim().toLocaleLowerCase();
+    const q = search.value.trim().toLocaleLowerCase(), freeOnly = free.getAttribute('aria-pressed') === 'true';
     let count = 0;
     entries.forEach(p => {
       const year = p.closest('.year-group')?.dataset.year || '';
-      const show = (kind === 'all' || p.dataset.type === kind) && (year + ' ' + p.textContent).toLocaleLowerCase().includes(q);
+      const show = (topic === 'all' || p.dataset.topic === topic) && (!freeOnly || 'free' in p.dataset)
+        && (year + ' ' + p.textContent).toLocaleLowerCase().includes(q);
       p.hidden = !show; if (show) count++;
     });
     groups.forEach(g => { g.hidden = !g.querySelector('.pub:not([hidden])'); });
+    $$('.years a').forEach(y => { y.hidden = !!$(y.hash)?.hidden; });
     $('#publication-count').textContent = count + ' publication' + (count === 1 ? '' : 's');
     $('#publication-empty').hidden = count !== 0;
     list.hidden = count === 0;
   }
   search.addEventListener('input', filter);
+  free.addEventListener('click', () => { free.setAttribute('aria-pressed', String(free.getAttribute('aria-pressed') !== 'true')); filter(); });
   $$('[data-publication-filter]').forEach(button => button.addEventListener('click', () => {
-    kind = button.dataset.publicationFilter;
+    topic = button.dataset.publicationFilter;
     $$('[data-publication-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
     filter();
   }));

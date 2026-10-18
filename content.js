@@ -2,8 +2,8 @@
 window.LAB = {
   name: 'RudhLab', domain: 'rudhlab.com',
   lead: 'Anirudh Kulkarni, PhD', institution: 'PDEU', location: 'Gandhinagar, India',
-  // Public contact address used by the homepage contact link.
-  email: 'anirudhk@outlook.in',
+  // Public contact address used by the homepage contact link (university address).
+  email: 'anirudh.kulkarni@sot.pdpu.ac.in',
   // Add a reviewed CV PDF in assets/, then set e.g. 'assets/anirudh-kulkarni-cv.pdf'.
   cv: null,
   // Talks and news. Dates are YYYY-MM-DD; add `end` for multi-day events.
