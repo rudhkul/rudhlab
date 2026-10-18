@@ -175,11 +175,11 @@ window.LAB = {
     "type": "code",
     "category": "GPU COMPUTING",
     "label": "Public repository",
-    "title": "CUDA-computing: LBM, IBM and FVM",
-    "description": "GPU implementations of lattice-Boltzmann, immersed-boundary, and finite-volume methods.",
+    "title": "3D two-phase VOF solver in CUDA",
+    "description": "The single-file CUDA C++ solver behind the 3D two-phase recording above: 200 × 200 × 200 grid, flux-corrected transport, Jacobi pressure solver. Educational; not validated.",
     "language": "CUDA C++",
-    "detail": "Public source code maintained by Anirudh Kulkarni. Follow the repository for implementation details and any available documentation. No speed-up or validation claim is made here.",
-    "method": "CUDA · lattice Boltzmann · immersed boundary · finite volume",
+    "detail": "Public source code maintained by Anirudh Kulkarni. The repository README describes the method, build steps, and output. No speed-up or validation claim is made here.",
+    "method": "CUDA C++ · 3D VOF · flux-corrected transport · Jacobi pressure solver",
     "url": "https://github.com/rudhkul/cuda-lbm-ibm-fvm"
   },
   {
