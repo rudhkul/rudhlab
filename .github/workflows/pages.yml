@@ -18,12 +18,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Unlisted pages live in a private repo so their URLs never appear in this public one.
+      - uses: actions/checkout@v4
+        with:
+          repository: rudhkul/rudhlab-unlisted
+          ssh-key: ${{ secrets.UNLISTED_DEPLOY_KEY }}
+          path: _unlisted
       - name: Prepare public files
         run: |
           mkdir -p _site/assets
           cp index.html profile.html publications.html news.html careers.html getting-started.html 404.html sitemap.xml robots.txt styles.css content.js app.js theme.js .nojekyll _site/
           cp -R assets/. _site/assets/
           if [ -f CNAME ]; then cp CNAME _site/; fi
+          cp -R _unlisted/p _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
