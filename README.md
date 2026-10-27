@@ -13,6 +13,7 @@ Run `python3 -m http.server 8000` from this directory, then open http://localhos
 - `profile.html`: concise academic profile with a print-to-PDF layout. This is not a full CV.
 - `news.html`: upcoming and past talks, workshops, and news (rendered from `LAB.news`).
 - `careers.html`: JRF / PhD positions, example topics, what students learn, who we are looking for, an application checklist, and FAQs. Add fellowship and eligibility details to each position when a call is announced. Its link preview uses `assets/og-careers.jpg`.
+- `phd-january-2027.html`: the January 2027 PhD admission call (research directions, PDEU dates, how to enquire and apply). Linked from the homepage notice, Careers, and News. When the cycle closes, point the homepage notice back to `careers.html` and update the Careers PhD row.
 - `getting-started.html`: a self-paced path for students: free CFD material, the lid-driven cavity and natural-convection repositories as first exercises, method and GPU references, tools, and the AI/ML-in-CFD workshop notebook. Linked from Careers and the homepage student card.
 - `content.js`: talks/news, simulation and code entries, public email, optional CV PDF path.
 - `styles.css`: the single design system (tokens, layout, dark mode, print).

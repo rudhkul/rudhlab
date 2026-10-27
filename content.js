@@ -11,6 +11,13 @@ window.LAB = {
   // Optional fields: host, location, url, linkLabel, kind (defaults to 'Talk').
   news: [
     {
+      start: '2026-10-27', end: '2026-11-23',
+      title: 'PhD applications open for January 2027',
+      event: 'PDEU PhD admissions · deadline 23 November 2026',
+      url: 'phd-january-2027.html', linkLabel: 'Topics and how to apply',
+      kind: 'Opportunity'
+    },
+    {
       start: '2026-09',
       title: 'Successful progress review of the stepwells passive-cooling project',
       event: 'Indian Knowledge Systems Division, Ministry of Education',

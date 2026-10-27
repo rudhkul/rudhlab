@@ -133,8 +133,9 @@ function newsEntry(n) {
   row.querySelector('.news-meta').textContent = [n.event, n.host, n.location].filter(Boolean).join(' · ');
   if (n.url) {
     const a = document.createElement('a');
-    Object.assign(a, {className: 'link', href: n.url, target: '_blank', rel: 'noopener noreferrer'});
-    a.textContent = (n.linkLabel || 'Details') + ' ↗';
+    const external = /^https?:/.test(n.url);
+    Object.assign(a, {className: 'link', href: n.url}, external ? {target: '_blank', rel: 'noopener noreferrer'} : {});
+    a.textContent = (n.linkLabel || 'Details') + (external ? ' ↗' : ' →');
     const p = document.createElement('p'); p.className = 'news-link'; p.append(a);
     row.lastElementChild.append(p);
   }
@@ -149,8 +150,9 @@ fill($('#news-upcoming'), upcoming, 'No upcoming talks at the moment.');
 fill($('#news-past'), past, 'Nothing listed yet.');
 fill($('#news-latest'), [...upcoming, ...past].slice(0, 3), 'Nothing listed yet.');
 
-// One-line "Next / Latest" pointer in the homepage hero.
-const latest = $('#latest'), lead = upcoming[0] || past[0];
+// One-line "Next / Latest" pointer in the homepage hero; prefers talks, since calls have their own notice.
+const isTalk = n => !n.kind || n.kind === 'Talk';
+const latest = $('#latest'), lead = upcoming.find(isTalk) || upcoming[0] || past[0];
 if (latest && lead) {
   const a = document.createElement('a');
   a.className = 'link'; a.href = 'news.html'; a.textContent = lead.title;
