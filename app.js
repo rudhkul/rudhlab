@@ -120,7 +120,9 @@ function when(item) {
 }
 const today = (() => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime(); })();
 const lastDay = iso => iso.length === 7 ? (({y, m}) => new Date(y, m, 0).getTime())(day(iso)) : day(iso).t;
-const news = (LAB.news || []).map(n => ({...n, upcoming: lastDay(n.end || n.start) >= today}));
+// A one-day item with a non-Talk kind (e.g. 'New project') is an announcement, so it is never Upcoming.
+const isAnnouncement = n => !n.end && n.kind && n.kind !== 'Talk';
+const news = (LAB.news || []).map(n => ({...n, upcoming: !isAnnouncement(n) && lastDay(n.end || n.start) >= today}));
 const upcoming = news.filter(n => n.upcoming).sort((a, b) => day(a.start).t - day(b.start).t);
 const past = news.filter(n => !n.upcoming).sort((a, b) => day(b.start).t - day(a.start).t);
 function newsEntry(n) {

@@ -11,6 +11,13 @@ window.LAB = {
   // Optional fields: host, location, url, linkLabel, kind (defaults to 'Talk').
   news: [
     {
+      start: '2026-10-29',
+      title: 'New three-year project: GPU-accelerated design optimisation of vertical-axis wind turbines for Gujarat’s renewable-energy transition',
+      event: 'Climate Change Fund of Gujarat (CCFG), Gujarat Energy Development Agency (GEDA)',
+      url: 'index.html#projects', linkLabel: 'Project details',
+      kind: 'New project'
+    },
+    {
       start: '2026-10-27', end: '2026-11-23',
       title: 'PhD applications open for January 2027',
       event: 'PDEU PhD admissions · deadline 23 November 2026',

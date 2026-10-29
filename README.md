@@ -40,6 +40,7 @@ Add an object to `LAB.news` in `content.js`; order does not matter. Items whose 
   location: 'Online',                             // optional
   url: 'https://…', linkLabel: 'Event page',      // optional
   kind: 'Award'                                   // optional; defaults to Talk (e.g. 'Project update')
+                                                  // a one-day item with a non-Talk kind is an announcement and goes straight to Past
 }
 ```
 
