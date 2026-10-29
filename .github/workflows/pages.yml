@@ -27,7 +27,7 @@ jobs:
       - name: Prepare public files
         run: |
           mkdir -p _site/assets
-          cp index.html profile.html publications.html news.html careers.html phd-january-2027.html getting-started.html fvm-tdma.html 404.html sitemap.xml robots.txt styles.css content.js app.js theme.js .nojekyll _site/
+          cp index.html profile.html publications.html news.html careers.html phd-january-2027.html getting-started.html 404.html sitemap.xml robots.txt styles.css content.js app.js theme.js .nojekyll _site/
           cp -R assets/. _site/assets/
           if [ -f CNAME ]; then cp CNAME _site/; fi
           cp -R _unlisted/site/. _site/
