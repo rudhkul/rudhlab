@@ -73,6 +73,8 @@ a:hover .arrow{transform:translateX(3px)}
 .notice:hover{border-color:var(--faint);background:var(--soft)}
 .notice .dot{width:7px;height:7px;border-radius:50%;background:#22a55a;animation:pulse 2.4s ease-in-out infinite}
 .notice .muted{margin-left:2px}
+.notices{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.notices .notice{margin-top:0}
 @keyframes pulse{50%{opacity:.25}}
 .latest{margin-top:16px;font-size:15px;color:var(--muted)}
 .latest a{color:var(--fg)}

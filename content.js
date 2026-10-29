@@ -12,10 +12,17 @@ window.LAB = {
   news: [
     {
       start: '2026-10-29',
-      title: 'New three-year project: GPU-accelerated design optimisation of vertical-axis wind turbines for Gujarat’s renewable-energy transition',
-      event: 'Climate Change Fund of Gujarat (CCFG), Gujarat Energy Development Agency (GEDA)',
+      title: 'Three-year project awarded: GPU-accelerated design optimisation of vertical-axis wind turbines for Gujarat’s renewable-energy transition',
+      event: 'Climate Change Fund of Gujarat (CCFG), Gujarat Energy Development Agency (GEDA) · PI Dr. Anirudh Kulkarni, Co-PI Dr. Kishan Fuse',
       url: 'index.html#projects', linkLabel: 'Project details',
       kind: 'New project'
+    },
+    {
+      start: '2026-10-29',
+      title: 'JRF position opening on the vertical-axis wind turbine project',
+      event: 'CCFG / GEDA project · PI Dr. Anirudh Kulkarni, Co-PI Dr. Kishan Fuse',
+      url: 'careers.html#positions', linkLabel: 'Position and how to express interest',
+      kind: 'Opportunity'
     },
     {
       start: '2026-10-27', end: '2026-11-23',
